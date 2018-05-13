@@ -1,16 +1,11 @@
-import React from 'react';
-import styled, { withTheme } from 'styled-components';
-import PropTypes from 'prop-types';
+import React from "react";
+import styled, { withTheme } from "styled-components";
+import PropTypes from "prop-types";
 
-import { Header } from 'components/Header';
-import { MainSection } from 'components/MainSection';
-import { PortfolioGridItem } from 'components/PortfolioGridItem';
-
-import Cognite from 'assets/portfolio/cognite/cognitePreview.png';
-import Slik from 'assets/portfolio/slikPortfolio/slikPortfolioPreview.png';
-import Jobmine from 'assets/portfolio/jobmine/jobminePreview.png';
-import Path from 'assets/portfolio/path/pathPreview.png';
-import PlanIt from 'assets/portfolio/planIt/planItPreview.png';
+import * as PropShapes from "utils/propShapes";
+import { Header } from "components/Header";
+import { MainSection } from "components/MainSection";
+import { PortfolioGridItem } from "components/PortfolioGridItem";
 
 const PortfolioGrid = styled.ul`
   display: flex;
@@ -18,35 +13,47 @@ const PortfolioGrid = styled.ul`
   flex-wrap: wrap;
 `;
 
-const PortfolioSection = props => (
-  <React.Fragment>
-    <Header
-      mainHeading="Portfolio"
-      background={props.theme.colors.background.white}
-      color={props.theme.colors.text.black}
-    />
-    <MainSection
-      background={props.theme.colors.background.white}
-      color={props.theme.colors.text.black}
-    >
-      <PortfolioGrid>
-        <PortfolioGridItem background={Cognite} link="/portfolio/cognite" />
-        <PortfolioGridItem background={Slik} link="/portfolio/slik" />
-        <PortfolioGridItem background={Jobmine} link="/portfolio/jobmine" />
-        <PortfolioGridItem background={Path} link="/portfolio/path" />
-        <PortfolioGridItem background={PlanIt} link="/portfolio/planit" />
-      </PortfolioGrid>
-    </MainSection>
-  </React.Fragment>
-);
+class PortfolioSection extends React.Component {
+  componentDidMount() {
+    document.title = "Jessie W | Portfolio";
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <Header
+          mainHeading="Projects"
+          background={this.props.theme.colors.background.white}
+          color={this.props.theme.colors.text.black}
+        />
+        <MainSection
+          background={this.props.theme.colors.background.white}
+          color={this.props.theme.colors.text.black}
+        >
+          <PortfolioGrid>
+            {this.props.content.map(page => (
+              <PortfolioGridItem
+                key={page.id}
+                background={page.gridImage}
+                link={page.link}
+                mainHeading={page.title}
+                subHeading={page.subHeading}
+              />
+            ))}
+          </PortfolioGrid>
+        </MainSection>
+      </React.Fragment>
+    );
+  }
+}
 
 PortfolioSection.propTypes = {
+  content: PropTypes.arrayOf(PropShapes.portfolioData),
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      text: PropTypes.objectOf(PropTypes.string),
-      background: PropTypes.objectOf(PropTypes.string),
-    }),
-  }).isRequired,
+      text: PropTypes.objectOf(PropTypes.func),
+      background: PropTypes.objectOf(PropTypes.func)
+    })
+  }).isRequired
 };
 
 export default withTheme(PortfolioSection);

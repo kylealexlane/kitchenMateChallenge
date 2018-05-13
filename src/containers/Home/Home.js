@@ -1,16 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { Home } from 'components/Home';
-
-import Background from 'assets/headerBackground.jpg';
+import { Home } from "components/Home";
 
 const HomeContainer = () => (
   <React.Fragment>
-    <Home
-      background={Background}
-      mainHeading="Hi, I'm Jessie"
-      subHeading="Welcome to my website!"
-    />
+    <Home />
   </React.Fragment>
 );
 

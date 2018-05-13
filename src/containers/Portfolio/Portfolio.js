@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { PortfolioSection } from 'components/PortfolioSection';
-
-import Background from 'assets/headerBackground.jpg';
+import { PortfolioSection } from "components/PortfolioSection";
 
 const PortfolioContainer = () => <PortfolioSection />;
 

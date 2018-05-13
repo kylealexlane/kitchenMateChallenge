@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { AboutSection } from 'components/AboutSection';
-
-import Background from 'assets/headerBackground.jpg';
+import { AboutSection } from "components/AboutSection";
 
 const AboutContainer = () => <AboutSection />;
 

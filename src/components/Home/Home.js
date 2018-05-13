@@ -1,8 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { Button } from "antd";
 
-import { ContentWrapper } from 'components/ContentWrapper';
+import { ContentWrapper } from "components/ContentWrapper";
+import { PrimaryButton } from "components/Button";
+// import { AboutSection } from "components/AboutSection";
+// import { PortfolioSection } from "components/PortfolioSection";
 
 const Wrapper = styled.div`
   ${props => props.theme.flex.center};
@@ -11,35 +15,51 @@ const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - ${props => props.theme.dimensions.navbar.height});
 `;
 
 const MainHeading = styled.h1`
-  padding-bottom: ${props => props.theme.padding.twentyFour};
+  margin-bottom: ${props => props.theme.padding.eight};
 `;
 
 const SubHeading = styled.h3``;
 
-const Home = props => (
-  <Wrapper background={props.background}>
-    <ContentWrapper>
-      <MainHeading>{props.mainHeading}</MainHeading>
-      <SubHeading>{props.subHeading}</SubHeading>
-    </ContentWrapper>
-    {props.children}
-  </Wrapper>
-);
+const MainText = styled.h4`
+  margin-bottom: ${props => props.theme.padding.twentyFour};
+`;
 
-Home.propTypes = {
-  mainHeading: PropTypes.string.isRequired,
-  subHeading: PropTypes.string.isRequired,
-  background: PropTypes.string,
-  children: PropTypes.node,
-};
+const Links = styled.p``;
 
-Home.defaultProps = {
-  background: '',
-  children: null,
-};
+class Home extends React.Component {
+  componentDidMount() {
+    document.title = "Jessie Won";
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <Wrapper>
+          <ContentWrapper>
+            <MainHeading>Jessie Won</MainHeading>
+            <SubHeading>Designer, Engineer, and Major Foodie</SubHeading>
+            <MainText>
+              Currently studying in Waterloo and searching for a{" "}
+              <strong>Fall 2018</strong> internship opportunity
+            </MainText>
+            <Links>
+              <Link to="/about">
+                <PrimaryButton>About Me</PrimaryButton>
+              </Link>{" "}
+              <Link to="/portfolio">
+                <PrimaryButton>Portfolio</PrimaryButton>
+              </Link>
+            </Links>
+          </ContentWrapper>
+        </Wrapper>
+        {/* <AboutSection />
+    <PortfolioSection /> */}
+      </React.Fragment>
+    );
+  }
+}
 
 export default Home;

@@ -1,5 +1,5 @@
 export {
   MainText,
-  MainTextSubHeading,
-  MainTextHeading,
-} from './PortfolioPageText.js';
+  TextGroup,
+  MainTextSubHeading
+} from "./PortfolioPageText.js";
