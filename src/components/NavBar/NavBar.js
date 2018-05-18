@@ -192,7 +192,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <Container>
-        <Logo to="/">jw.</Logo>
+        <Logo to="/">KL.</Logo>
         <HamburgerButtonWrapper
           background={this.props.background}
           onClick={this.toggleMenu}

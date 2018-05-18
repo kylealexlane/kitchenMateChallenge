@@ -13,7 +13,25 @@ const colors = {
   pathGreen: "#3a7048",
   pathGrey: "#778084",
   planItBlue: "#396770",
-  planItGreen: "#39705a"
+  planItGreen: "#39705a",
+
+  // mainBackground: "#FCFCFC",
+  // secondaryBackground: "#FCFCFC",
+  //
+  // mainText: "#171717",
+  // secondaryText: "#333333",
+  //
+  // mainAccent: "#1D9696",
+  // secondaryAccent: "#B4EC51",
+
+  mainBackground: "#202124",
+  secondaryBackground: "#FCFCFC",
+
+  mainText: "#fafafa",
+  secondaryText: "#333333",
+
+  mainAccent: "#1D9696",
+  secondaryAccent: "#B4EC51",
 };
 
 export default {
@@ -64,7 +82,15 @@ export default {
       planItGradient: `linear-gradient(to bottom right, ${colors.planItBlue}, ${
         colors.planItGreen
       })`
-    }
+    },
+    mainBackground: colors.mainBackground,
+    secondaryBackground: colors.secondaryBackground,
+
+    mainText: colors.mainText,
+    secondaryText: colors.secondaryText,
+
+    mainAccent: colors.mainAccent,
+    secondaryAccent: colors.secondaryAccent,
   },
   padding: {
     four: "4px",
@@ -83,12 +109,13 @@ export default {
     center: "display: flex; align-items: center; justify-content: center",
     flexStart:
       "display: flex; justify-content: flex-start; align-items: flex-start;",
-    flexEnd: "display: flex; justify-content: flex-end"
+    flexEnd: "display: flex; justify-content: flex-end",
+      flexRowEnd: "display: flex; flexDirection: row; justify-content: flex-end; align-items: center;",
   },
   breakpoints: {
     sm: "576px",
     md: "768px",
     lg: "992px",
     xl: "1200px"
-  }
+  },
 };

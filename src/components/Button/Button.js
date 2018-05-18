@@ -12,14 +12,15 @@ const StyledButton = styled.button`
 `;
 
 const StyledPrimaryButton = StyledButton.extend`
-  color: ${props => props.theme.colors.text.white};
-  background-color: ${props => props.theme.colors.primary};
-  border-color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.mainText};
+  background-color: ${props => props.theme.colors.mainBackground};
+  border-color: ${props => props.theme.colors.mainText};
   :hover,
   :focus,
   :active {
-    background-color: ${props => props.theme.colors.primaryHover};
-    border-color: ${props => props.theme.colors.primaryHover};
+    background-color: ${props => props.theme.colors.mainText};
+    // border-color: ${props => props.theme.colors.mainText};
+    color: ${props => props.theme.colors.mainBackground};
   }
 `;
 

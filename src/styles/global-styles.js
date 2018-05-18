@@ -1,5 +1,8 @@
 import { injectGlobal } from "styled-components";
-import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less';
+// import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 
 injectGlobal`
   html,
@@ -8,7 +11,7 @@ injectGlobal`
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background: #FCFCFC;
   }
 

@@ -98,7 +98,7 @@ function Routes() {
   return (
     <ConnectedRouter history={history}>
       <React.Fragment>
-        <NavBar />
+        {/*<NavBar />*/}
         <Container>
           <Route exact path="/" component={HomeContainer} />
           <Route exact path="/about" component={AboutContainer} />

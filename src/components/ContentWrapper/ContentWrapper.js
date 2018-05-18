@@ -6,6 +6,7 @@ const Content = styled.div`
   margin: 0 ${props => props.theme.padding.fourtyEight};
   max-width: ${props => props.theme.dimensions.maxWidth};
   width: 100%;
+  z-index: 100;
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
     margin: 0 ${props => props.theme.padding.thirtyTwo};
   }

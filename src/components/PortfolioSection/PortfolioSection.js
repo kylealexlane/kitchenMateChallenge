@@ -15,32 +15,32 @@ const PortfolioGrid = styled.ul`
 
 class PortfolioSection extends React.Component {
   componentDidMount() {
-    document.title = "Jessie W | Portfolio";
+    document.title = "Kyle L | Portfolio";
   }
   render() {
     return (
       <React.Fragment>
-        <Header
-          mainHeading="Projects"
-          background={this.props.theme.colors.background.white}
-          color={this.props.theme.colors.text.black}
-        />
-        <MainSection
-          background={this.props.theme.colors.background.white}
-          color={this.props.theme.colors.text.black}
-        >
-          <PortfolioGrid>
-            {this.props.content.map(page => (
-              <PortfolioGridItem
-                key={page.id}
-                background={page.gridImage}
-                link={page.link}
-                mainHeading={page.title}
-                subHeading={page.subHeading}
-              />
-            ))}
-          </PortfolioGrid>
-        </MainSection>
+        {/*<Header*/}
+          {/*mainHeading="Projects"*/}
+          {/*background={this.props.theme.colors.background.white}*/}
+          {/*color={this.props.theme.colors.text.black}*/}
+        {/*/>*/}
+        {/*<MainSection*/}
+          {/*background={this.props.theme.colors.background.white}*/}
+          {/*color={this.props.theme.colors.text.black}*/}
+        {/*>*/}
+          {/*<PortfolioGrid>*/}
+            {/*{this.props.content.map(page => (*/}
+              {/*<PortfolioGridItem*/}
+                {/*key={page.id}*/}
+                {/*background={page.gridImage}*/}
+                {/*link={page.link}*/}
+                {/*mainHeading={page.title}*/}
+                {/*subHeading={page.subHeading}*/}
+              {/*/>*/}
+            {/*))}*/}
+          {/*</PortfolioGrid>*/}
+        {/*</MainSection>*/}
       </React.Fragment>
     );
   }
