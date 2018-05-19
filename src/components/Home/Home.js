@@ -14,9 +14,8 @@ import { ExternalLinks } from 'components/ExternalLinks';
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import { fadeIn } from 'react-animations';
-
-import Sun from "assets/sun.png";
-import Earth from "assets/earth.png";
+import { ParticleBackground } from 'components/ParticleBackground';
+import { HeadingWrapper } from 'components/HeadingWrapper';
 
 
 const Wrapper = styled.div`
@@ -41,7 +40,7 @@ const SubHeading = styled.h1``;
 const MainText = styled.h4`
   margin-bottom: ${props => props.theme.padding.twentyFour};
     color: ${props => props.theme.colors.mainText};
-
+    text-align: center;
 `;
 
 const Links = styled.p``;
@@ -62,133 +61,25 @@ const FadeDiv = styled.div`
     animation: 1s ${fadeAnimation};
 `;
 
-const SunImage = styled.img`
-  position: absolute;
-   height: 200px;
-   width: 200px;
-   top: -100px;
-   left: -100px;
-`;
-
-const EarthImage = styled.img`
-  position: absolute;
-   height: 80px;
-   width: 80px;
-   bottom: 0;
-`;
-
 class Home extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-          // heading: '',
-          dotsFreq: 20,
+          dotsFreq: 7,
           typingCompleted: true,
       };
   }
   componentDidMount() {
       document.title = "Kyle Lane";
-      // setTimeout(()=>{ this.renderHelloWorld(); }, 1000);
   }
-  
+
   render() {
-      console.log('rendering', this.state);
-      const mainBackground = this.props.theme.colors.mainText;
     return (
       <React.Fragment>
         <Wrapper>
-            {this.state.typingCompleted &&
-            <FadeDiv>
-                <StyledParticles params={{
-                    particles: {
-                        number: {
-                            value: this.state.dotsFreq,
-                            density: {
-                                enable: true,
-                                value_area: 800
-                            }
-                        },
-                        color: {
-                            value: mainBackground
-                        },
-                        shape: {
-                            type: "circle",
-                            stroke: {
-                                width: 0,
-                                color: "#000000"
-                            },
-                            polygon: {
-                                nb_sides: 5
-                            },
-                            // image: {
-                            //     src: "img/github.svg",
-                            //     width: 100,
-                            //     height: 100
-                            // }
-                        },
-                        size: {
-                            value: 4,
-                            random: true,
-                            anim: {
-                                enable: false,
-                                speed: 80,
-                                size_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        line_linked: {
-                            enable: false,
-                            distance: 300,
-                            color: "#000000",
-                            opacity: 0.03,
-                            width: 1
-                        },
-                        interactivity: {
-                            detect_on: "canvas",
-                            events: {
-                                onhover: {
-                                    enable: false,
-                                    mode: "repulse"
-                                },
-                                onclick: {
-                                    enable: true,
-                                    mode: "push"
-                                },
-                                resize: true
-                            },
-                            modes: {
-                                grab: {
-                                    distance: 800,
-                                    line_linked: {
-                                        opacity: 1
-                                    }
-                                },
-                                bubble: {
-                                    distance: 800,
-                                    size: 80,
-                                    duration: 2,
-                                    opacity: 0.8,
-                                    speed: 3
-                                },
-                                repulse: {
-                                    distance: 400,
-                                    duration: 0.4
-                                },
-                                push: {
-                                    particles_nb: 4
-                                },
-                                remove: {
-                                    particles_nb: 2
-                                }
-                            }
-                        },
-                    }}}
-                />
-            </FadeDiv>}
-            {/*<SunImage src={Sun} alt="Sun" />*/}
-          {/*<EarthImage src={Earth} alt="Earth" />*/}
+          <ParticleBackground numParticles={7} />
             <ExternalLinks />
-              <ContentWrapper>
+              <HeadingWrapper>
                 {/*<MainHeading>{this.state.heading}</MainHeading>*/}
                   <MainHeading>
                       <Typist
@@ -196,20 +87,19 @@ class Home extends React.Component {
                               show: true,
                               blink: true,
                               element: '|',
-                              hideWhenDone: true,
+                              hideWhenDone: false,
                               hideWhenDoneDelay: 2000,
                           }}
                           // onTypingDone={()=>this.setTypingCompleted()}
                       >
                           <span>Hello, World! </span>
                           <Typist.Backspace count={14} delay={300} />
-                          <span>I'm Kyle! </span>
+                          <span>I'm Kyle. </span>
                       </Typist>
                   </MainHeading>
                 {/*<SubHeading>I'm Kyle</SubHeading>*/}
                 <MainText>
-                  I'm studying at the University of Waterloo and searching for a{" "}
-                  <strong>Fall 2018</strong> internship opportunity
+                  I love meeting new people and learning new things!
                 </MainText>
                 <Links>
                   <Link to="/about">
@@ -219,7 +109,7 @@ class Home extends React.Component {
                     <PrimaryButton>Portfolio</PrimaryButton>
                   </Link>
                 </Links>
-              </ContentWrapper>
+              </HeadingWrapper>
         </Wrapper>
         {/* <AboutSection />
     <PortfolioSection /> */}

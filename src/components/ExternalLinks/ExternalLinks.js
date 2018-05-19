@@ -3,7 +3,9 @@ import styled, { withTheme } from "styled-components";
 import PropTypes from "prop-types";
 
 import { ContentWrapper } from "components/ContentWrapper";
-import {Icon} from "antd/lib/index";
+import { Icon } from "antd/lib/index";
+import { Link } from "react-router-dom";
+
 
 const Wrapper = styled.div`
   ${props => props.theme.flex.flexRowEnd};
@@ -11,11 +13,12 @@ const Wrapper = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 200;
   background: ${props =>
     props.background || 'transparent'};
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
-    padding: ${props => props.theme.padding.twentyFour} 0 0;
-  }
+  // @media (max-width: ${props => props.theme.breakpoints.md}) {
+  //   padding: ${props => props.theme.padding.twentyFour} 0 0;
+  // }
 `;
 
 const CircleIconButton = styled.a`
@@ -84,6 +87,14 @@ const SocialButton = props => (
 const ExternalLinks = props => (
     <Wrapper background={props.background} color={props.color}>
         <Buttons>
+            <Link to="" >
+              <SocialButton
+                // href="https://www.facebook.com/kyle97"
+                // target="_new"
+                // color={'blue'}
+                icon="home"
+              />
+            </Link>
             <SocialButton
                 href="https://www.facebook.com/kyle97"
                 target="_new"

@@ -22,6 +22,8 @@ import Jobmine from "assets/portfolio/jobmine/jobminePreview.png";
 import Path from "assets/portfolio/path/pathPreview.png";
 import PlanIt from "assets/portfolio/planIt/planItPreview.png";
 
+import { ParticleBackground } from 'components/ParticleBackground';
+
 const Container = styled.div`
   text-align: left;
 `;

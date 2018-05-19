@@ -28,7 +28,7 @@ const colors = {
   secondaryBackground: "#FCFCFC",
 
   mainText: "#fafafa",
-  secondaryText: "#333333",
+  secondaryText: "#5f6368",
 
   mainAccent: "#1D9696",
   secondaryAccent: "#B4EC51",
@@ -110,7 +110,10 @@ export default {
     flexStart:
       "display: flex; justify-content: flex-start; align-items: flex-start;",
     flexEnd: "display: flex; justify-content: flex-end",
-      flexRowEnd: "display: flex; flexDirection: row; justify-content: flex-end; align-items: center;",
+    flexRowEnd: "display: flex; flex-direction: row; justify-content: flex-end; align-items: center;",
+    flexRowBetween: "display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;",
+    flexColumnCenter: "display: flex; flex: 1; flex-direction: column; justify-content: center, align-items: center;",
+    flexRowJustifyStart: "display: flex; flex-direction: row; justify-content: flex-start; align-items: center;",
   },
   breakpoints: {
     sm: "576px",

@@ -12,11 +12,11 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    background: #FCFCFC;
+    background: #202124;
   }
 
   h1 {
-    font-size: 52px;
+    font-size: 64px;
     font-weight: 500;
   }
   h2 {
@@ -53,4 +53,6 @@ injectGlobal`
     list-style: none;
     padding-left: 0;
   }
+  
+  
 `;
