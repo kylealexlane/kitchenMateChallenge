@@ -37,7 +37,7 @@ import SproutLogo from 'assets/pngs/SproutLogoCropped.png'
 
 
 
-const images = [SproutHome, SproutTrackHome, SproutDrinkUp, SproutAppsDevices, SproutMeTab];
+const images = [SproutTrackHome, SproutHome, SproutDrinkUp, SproutAppsDevices, SproutMeTab];
 
 const MainHeading = styled.h1`
   color: ${props => props.theme.colors.mainText};
@@ -104,11 +104,11 @@ class SproutPage extends React.Component {
     this.state = {
       dotsFreq: 7,
       typingCompleted: true,
-      currentImage: SproutHome,
+      currentImage: SproutTrackHome,
     };
   }
   componentDidMount() {
-    document.title = "Kyle Lane";
+    document.title = "K.L | Sprout";
     this.rotateImages();
   }
 
@@ -126,7 +126,6 @@ class SproutPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/*<ParticleBackground numParticles={3} color={'#2ebe68'}/>*/}
         <HeadingWrapper>
           <MarginTopDiv>
           <ColumnDiv>

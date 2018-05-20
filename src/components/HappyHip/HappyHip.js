@@ -88,7 +88,7 @@ class HappyHip extends React.Component {
     };
   }
   componentDidMount() {
-    document.title = "Kyle Lane";
+    document.title = "K.L | HappyHip";
     this.rotateImages();
   }
 

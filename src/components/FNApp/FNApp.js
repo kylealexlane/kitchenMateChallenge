@@ -99,7 +99,7 @@ class FNApp extends React.Component {
     };
   }
   componentDidMount() {
-    document.title = "Kyle Lane";
+    document.title = "K.L | FN MMS";
     this.rotateImages();
   }
 

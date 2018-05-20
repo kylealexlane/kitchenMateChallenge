@@ -108,7 +108,7 @@ class MobilePortfolio extends React.Component {
     };
   }
   componentDidMount() {
-    document.title = "Kyle Lane";
+    document.title = "K.L | DeepStats";
   }
 
   render() {
