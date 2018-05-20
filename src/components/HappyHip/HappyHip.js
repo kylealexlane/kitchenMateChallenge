@@ -1,21 +1,16 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-
-import { HeadingWrapper } from "components/HeadingWrapper";
-import { PrimaryButton } from "components/Button";
-import { ExternalLinks } from 'components/ExternalLinks';
-import "styles/main.css";
+import styled, { withTheme } from "styled-components";
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
-import { CustomizedTabs } from "components/CustomizedTabs";
-import { MobilePhone } from 'components/MobilePhone';
-import C from 'assets/pngs/c.png';
-import CPlusPlus from 'assets/pngs/c++.png';
-import Arduino from 'assets/pngs/arduino.png';
 
-import HappyHipPants from 'assets/pngs/HappyHipPants.png';
-import HappyHipCropped from 'assets/pngs/HappyHipCropped.png';
-import { ParticleBackground } from 'components/ParticleBackground';
+import { HeadingWrapper } from "../../components/HeadingWrapper";
+import "../../styles/main.css";
+import { MobilePhone } from '../../components/MobilePhone';
+import C from '../../assets/pngs/c.png';
+import CPlusPlus from '../../assets/pngs/c++.png';
+import Arduino from '../../assets/pngs/arduino.png';
+import HappyHipPants from '../../assets/pngs/HappyHipPants.png';
+import HappyHipCropped from '../../assets/pngs/HappyHipCropped.png';
 
 const images = [HappyHipCropped, HappyHipPants];
 
@@ -62,8 +57,24 @@ const ColumnDiv = styled.div`
   margin-top: 150;
 `;
 
+const ColumnDivPhone = styled.div`
+  ${props => props.theme.flex.flexColumnCenter};
+  flex: 1;
+  height: fit-content;
+  @media only screen and (max-width: 900px) {
+    order: 1;
+  }
+`;
+
 const MarginTopDiv = styled.div`
-  margin-top: 60px;
+  margin-top: 50px;
+  width: 100%;
+  // padding-left: 16px;
+  // padding-right: 16px;
+  padding: 16px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -111,9 +122,9 @@ class HappyHip extends React.Component {
           <MarginTopDiv>
             <ColumnDiv>
               <RowDiv>
-                <ColumnDiv>
+                <ColumnDivPhone>
                   <MobilePhone animation={'left'} pic={this.state.currentImage}/>
-                </ColumnDiv>
+                </ColumnDivPhone>
                 <ColumnDiv>
                   <HeaderRowDiv>
                     {/*<AppImage src={SproutLogo} />*/}

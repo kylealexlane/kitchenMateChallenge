@@ -1,10 +1,8 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-import { Link } from "react-router-dom";
-
-import { ParticleBackground } from 'components/ParticleBackground';
-import { Home } from 'components/Home';
-import { PortfolioSection } from 'components/PortfolioSection';
+import { withTheme } from "styled-components";
+import { ParticleBackground } from '../../components/ParticleBackground';
+import { Home } from '../../components/Home';
+import { PortfolioSection } from '../../components/PortfolioSection';
 
 
 class Master extends React.Component {

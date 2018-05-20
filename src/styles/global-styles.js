@@ -47,6 +47,35 @@ injectGlobal`
       color: red;
     }
   }
+  @media only screen and (max-width: 600px) {
+    h1 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 64px;
+    }
+    h2 {
+      font-size: 44px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
   
 
   ul {

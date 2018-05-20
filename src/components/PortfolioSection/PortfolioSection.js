@@ -1,27 +1,18 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-import { Link } from "react-router-dom";
-import { Button } from "antd";
-
-import theme from '../../styles/theme'
-
-import { HeadingWrapper } from "components/HeadingWrapper";
-import { PrimaryButton } from "components/Button";
+import styled, { withTheme } from "styled-components";
 import Particles from 'react-particles-js';
-import { ExternalLinks } from 'components/ExternalLinks';
-import "styles/main.css";
-// import { AboutSection } from "components/AboutSection";
-// import { PortfolioSection } from "components/PortfolioSection";
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
-import { fadeInRightBig, bounce } from 'react-animations';
 import { Icon } from "antd";
-import { CustomizedTabs } from "components/CustomizedTabs";
-import { MobilePortfolio } from 'components/MobilePortfolio';
-import { ParticleBackground } from 'components/ParticleBackground';
-import { SproutPage } from 'components/SproutPage';
-import { FNApp } from 'components/FNApp';
-import { HappyHip } from 'components/HappyHip';
+import "../../styles/main.css";
+import { HeadingWrapper } from "../../components/HeadingWrapper";
+import { ExternalLinks } from '../../components/ExternalLinks';
+import { CustomizedTabs } from "../../components/CustomizedTabs";
+import { MobilePortfolio } from '../../components/MobilePortfolio';
+import { ParticleBackground } from '../../components/ParticleBackground';
+import { SproutPage } from '../../components/SproutPage';
+import { FNApp } from '../../components/FNApp';
+import { HappyHip } from '../../components/HappyHip';
 
 
 const Wrapper = styled.div`
@@ -56,7 +47,7 @@ const PortfolioTitle = styled.div`
 
 const TabsDiv = styled.div`
   position: absolute;
-  left: 16px;
+  left: 0px;
   top: 32px;
   width: 100%;
   // height: calc(100vh - ${props => props.theme.dimensions.navbar.height});
@@ -72,8 +63,8 @@ const SubHeading = styled.h1``;
 
 const MainText = styled.h4`
   margin-bottom: ${props => props.theme.padding.twentyFour};
-    color: ${props => props.theme.colors.mainText};
-
+  color: ${props => props.theme.colors.mainText};
+  text-align: center;
 `;
 
 const Links = styled.p``;
@@ -152,7 +143,7 @@ class PortfolioSection extends React.Component {
                       hideWhenDoneDelay: 2000,
                     }}
                   >
-                    <span>^ Portfolio </span>
+                    <span>Portfolio </span>
                   </Typist>
                 </MainHeading>
                 <MainText>

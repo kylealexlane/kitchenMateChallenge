@@ -1,24 +1,18 @@
 import React from "react";
 import styled, { withTheme } from "styled-components";
-import { HeadingWrapper } from "components/HeadingWrapper";
-import { PrimaryButton } from "components/Button";
-import { ExternalLinks } from 'components/ExternalLinks';
-import "styles/main.css";
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
-import { CustomizedTabs } from "components/CustomizedTabs";
-import { Ipad } from 'components/Ipad';
-import CSSPNG from 'assets/pngs/css.png';
-import JsPNG from 'assets/pngs/javascript.png';
-import DBPNG from 'assets/pngs/db.png';
-import MySQLPHPPNG from 'assets/pngs/phpsql.png';
-import HTMLPNG from 'assets/pngs/html.png';
-import IpadMMS from 'assets/oldImages/IpadMMSTasks.png';
-import IpadMMSSignIn from 'assets/oldImages/IpadMMSSignIn.png';
-import { ParticleBackground } from 'components/ParticleBackground';
 
-
-
+import { HeadingWrapper } from "../../components/HeadingWrapper";
+import "../../styles/main.css";
+import { Ipad } from '../../components/Ipad';
+import CSSPNG from '../../assets/pngs/css.png';
+import JsPNG from '../../assets/pngs/javascript.png';
+import DBPNG from '../../assets/pngs/db.png';
+import MySQLPHPPNG from '../../assets/pngs/phpsql.png';
+import HTMLPNG from '../../assets/pngs/html.png';
+import IpadMMS from '../../assets/oldImages/IpadMMSTasks.png';
+import IpadMMSSignIn from '../../assets/oldImages/IpadMMSSignIn.png';
 
 const images = [IpadMMS, IpadMMSSignIn];
 
@@ -74,7 +68,14 @@ const ColumnDivIpad = styled.div`
 `;
 
 const MarginTopDiv = styled.div`
-  margin-top: 60px;
+  margin-top: 50px;
+  width: 100%;
+  // padding-left: 16px;
+  // padding-right: 16px;
+  padding: 16px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -117,14 +118,12 @@ class FNApp extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/*<ParticleBackground numParticles={3} color={'#FFFFFF'}/>*/}
         <HeadingWrapper>
           <MarginTopDiv>
             <ColumnDiv>
               <RowDiv>
                 <ColumnDiv>
                   <HeaderRowDiv>
-                    {/*<AppImage src={SproutLogo} />*/}
                     <MainHeading>
                       <Typist
                         cursor={{
@@ -153,8 +152,6 @@ class FNApp extends React.Component {
                     Worked at RJ. Burnside and had opportunity to design and develop this POC web app after visiting
                     First Nations and seeing the loss of productivity.
                   </MainText>
-                  {/*<HeadingText>CURRENTLY ON APPLE TEST FLIGHT AND GOOGLE PLAY </HeadingText>*/}
-                  {/*<HeadingText>BUILT WITH</HeadingText>*/}
                   <TechRowDiv>
                     <StyledImage src={HTMLPNG} />
                     <StyledImage src={CSSPNG} />

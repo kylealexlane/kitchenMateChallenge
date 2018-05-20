@@ -15,13 +15,35 @@ const MarginTopDiv = styled.div`
   }
 `;
 
+const flexCenterMedia = styled.div`
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+
+
 const styles = theme => ({
   root: {
-    flexGrow: 1,
     backgroundColor: 'transparent',
-},
+    width: '100%',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // display: 'flex',
+  },
+  routeCentered: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    display: 'flex',
+  },
   tabsRoot: {
     borderBottom: '0px solid transparent',
+    // width: '100%',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // display: 'flex',
   },
   tabsIndicator: {
     backgroundColor: '#fafafa',
@@ -29,9 +51,10 @@ const styles = theme => ({
   tabRoot: {
     zIndex: 1000,
     textTransform: 'initial',
-    minWidth: 72,
+    minWidth: 0,
+    // maxWidth: 72,
     fontWeight: theme.typography.fontWeightRegular,
-    marginRight: theme.spacing.unit * 2,
+    marginRight: 3,
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
@@ -58,7 +81,7 @@ const styles = theme => ({
   },
   tabSelected: {},
   typography: {
-    padding: theme.spacing.unit * 3,
+    padding: 2,
   },
 });
 
@@ -75,10 +98,9 @@ class CustomizedTabs extends React.Component {
   render() {
     const { classes } = this.props;
     const { value } = this.state;
-
     return (
       <MarginTopDiv>
-        <div className={classes.root}>
+        <div className={[classes.root, window.outerWidth <= 600 && classes.routeCentered]}>
           <Tabs
             value={value}
             onChange={this.handleChange}
@@ -86,7 +108,7 @@ class CustomizedTabs extends React.Component {
           >
             <Tab
               disableRipple
-              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              classes={{ root: [classes.tabRoot, window.outerWidth <= 600 && classes.routeCentered], selected: classes.tabSelected }}
               label=""
             />
             <Tab

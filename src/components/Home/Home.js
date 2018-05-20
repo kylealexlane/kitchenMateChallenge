@@ -1,21 +1,15 @@
 import React from "react";
 import styled, { keyframes, withTheme } from "styled-components";
 import { Link } from "react-router-dom";
-import { Button } from "antd";
-
-import theme from '../../styles/theme'
-
-import { ContentWrapper } from "components/ContentWrapper";
-import { PrimaryButton } from "components/Button";
-import Particles from 'react-particles-js';
-import { ExternalLinks } from 'components/ExternalLinks';
-// import { AboutSection } from "components/AboutSection";
-// import { PortfolioSection } from "components/PortfolioSection";
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import { fadeIn } from 'react-animations';
-import { ParticleBackground } from 'components/ParticleBackground';
-import { HeadingWrapper } from 'components/HeadingWrapper';
+import Particles from 'react-particles-js';
+
+import { PrimaryButton } from "../../components/Button";
+import { ExternalLinks } from '../../components/ExternalLinks';
+import { ParticleBackground } from '../../components/ParticleBackground';
+import { HeadingWrapper } from '../../components/HeadingWrapper';
 
 
 const Wrapper = styled.div`

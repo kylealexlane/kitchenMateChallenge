@@ -1,8 +1,5 @@
 import React from "react";
-import styled, { withTheme } from "styled-components";
-import PropTypes from "prop-types";
-
-import { ContentWrapper } from "components/ContentWrapper";
+import styled from "styled-components";
 import { Icon } from "antd/lib/index";
 import { Link } from "react-router-dom";
 
@@ -90,7 +87,7 @@ const SocialButton = props => (
 const ExternalLinks = props => (
     <Wrapper background={props.background} color={props.color}>
         <Buttons>
-            <Link to="" >
+            <Link to="/" >
               <SocialButton
                 // href="https://www.facebook.com/kyle97"
                 // target="_new"

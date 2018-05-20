@@ -1,8 +1,6 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-
+import styled, { withTheme } from "styled-components";
 import Particles from 'react-particles-js';
-import { ExternalLinks } from 'components/ExternalLinks';
 
 const StyledParticles = styled(Particles)`
     position: absolute;
@@ -30,7 +28,6 @@ class ParticleBackground extends React.Component {
   }
 
   render() {
-    const mainBackground = this.props.theme.colors.mainText;
     return (
       <React.Fragment>
         <StyledParticles params={{
@@ -54,11 +51,6 @@ class ParticleBackground extends React.Component {
               polygon: {
                 nb_sides: 5
               },
-              // image: {
-              //     src: "img/github.svg",
-              //     width: 100,
-              //     height: 100
-              // }
             },
             size: {
               value: 4,

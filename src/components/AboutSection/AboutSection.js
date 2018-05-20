@@ -3,14 +3,13 @@ import styled, { withTheme } from "styled-components";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-import { MainSection } from "components/MainSection";
-import { Header } from "components/Header";
-import { PrimaryButton } from "components/Button";
-
-import AvatarOne from "assets/jessie.png";
-import AvatarTwo from "assets/jessie2.png";
-import AvatarThree from "assets/jessie3.png";
-import Resume from "assets/resume.pdf";
+import { MainSection } from "../../components/MainSection";
+import { Header } from "../../components/Header";
+import { PrimaryButton } from "../../components/Button";
+import AvatarOne from "../../assets/jessie.png";
+import AvatarTwo from "../../assets/jessie2.png";
+import AvatarThree from "../../assets/jessie3.png";
+import Resume from "../../assets/resume.pdf";
 
 const TextAvatarGroup = styled.div`
   ${props => props.theme.flex.center};

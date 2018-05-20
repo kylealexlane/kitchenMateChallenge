@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AboutSection } from "components/AboutSection";
+import { AboutSection } from "../../components/AboutSection";
 
 const AboutContainer = () => <AboutSection />;
 

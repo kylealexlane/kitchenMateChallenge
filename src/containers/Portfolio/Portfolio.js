@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PortfolioSection } from "components/PortfolioSection";
+import { PortfolioSection } from "../../components/PortfolioSection";
 
 const PortfolioContainer = () => <PortfolioSection />;
 

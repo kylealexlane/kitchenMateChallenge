@@ -1,16 +1,9 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-import PropTypes from "prop-types";
-
-import { ContentWrapper } from "components/ContentWrapper";
-import { Icon } from "antd/lib/index";
-import { Link } from "react-router-dom";
-// import IphoneSA from 'assets/IphoneSABlack.png';
-import IpadMMS from 'assets/oldImages/IpadMMSTasks.png';
-
+import styled, { keyframes } from "styled-components";
 import { fadeInRight, fadeInLeft, fadeOutLeft, fadeOutRight } from 'react-animations';
+import IpadMMS from '../../assets/oldImages/IpadMMSTasks.png';
 
-const width = 240;
+const width = window.outerWidth <= 300 ? 150 : 250;
 const height = width * 1.51;
 const multiplier = 1.7;
 const timer = 1000;
@@ -18,7 +11,8 @@ const timer = 1000;
 const Wrapper = styled.div`
   height: ${height*multiplier}px;
   width: ${width*multiplier}px;
-  margin: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 `;
 
 const Phone = styled.img`

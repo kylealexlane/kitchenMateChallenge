@@ -1,16 +1,9 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-import PropTypes from "prop-types";
-
-import { ContentWrapper } from "components/ContentWrapper";
-import { Icon } from "antd/lib/index";
-import { Link } from "react-router-dom";
-// import IphoneSA from 'assets/IphoneSABlack.png';
-import IphoneSA from 'assets/IphoneSA.png';
-
+import styled, { keyframes } from "styled-components";
 import { fadeInRight, fadeInLeft, fadeOutLeft, fadeOutRight } from 'react-animations';
+import IphoneSA from '../../assets/IphoneSA.png';
 
-const width = 200;
+const width = window.outerWidth <= 300 ? 150 : 200;
 const height = width * 2.03;
 const multiplier = 1.7;
 const timer = 1000;
@@ -18,7 +11,8 @@ const timer = 1000;
 const Wrapper = styled.div`
   height: ${height*multiplier}px;
   width: ${width*multiplier}px;
-  margin: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   ${props => props.theme.flex.flexColumnCenter};
 `;
 

@@ -1,29 +1,16 @@
 import React from "react";
-import styled, { keyframes, withTheme } from "styled-components";
-import { Link } from "react-router-dom";
-import { Button } from "antd";
-
-import theme from '../../styles/theme'
-
-import { HeadingWrapper } from "components/HeadingWrapper";
-import { PrimaryButton } from "components/Button";
-import { ParticleBackground } from "components/ParticleBackground";
-import { ExternalLinks } from 'components/ExternalLinks';
-import "styles/main.css";
-// import { AboutSection } from "components/AboutSection";
-// import { PortfolioSection } from "components/PortfolioSection";
+import styled, { withTheme } from "styled-components";
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
-import { fadeIn, bounce } from 'react-animations';
-import { Icon } from "antd";
-import { CustomizedTabs } from "components/CustomizedTabs";
-import { MobilePhone } from 'components/MobilePhone';
-import ApplePNG from 'assets/pngs/apple.png';
-import AndroidPNG from 'assets/pngs/android.png';
-import CSSPNG from 'assets/pngs/css.png';
-import JsPNG from 'assets/pngs/javascript.png';
-import ReactPNG from 'assets/pngs/react.png';
-import DeepStatLogo from 'assets/DeepStats/DeepStatsLogoCropped.png'
+import { HeadingWrapper } from "../../components/HeadingWrapper";
+import "../../styles/main.css";
+import { MobilePhone } from '../../components/MobilePhone';
+import ApplePNG from '../../assets/pngs/apple.png';
+import AndroidPNG from '../../assets/pngs/android.png';
+import CSSPNG from '../../assets/pngs/css.png';
+import JsPNG from '../../assets/pngs/javascript.png';
+import ReactPNG from '../../assets/pngs/react.png';
+import DeepStatLogo from '../../assets/DeepStats/DeepStatsLogoCropped.png'
 
 
 
@@ -32,14 +19,12 @@ const MainHeading = styled.h1`
 `;
 
 const HeadingText = styled.h3`
-  margin-bottom: ${props => props.theme.padding.eight};
+  margin-bottom: 18px;
   color: ${props => props.theme.colors.mainText};
 `;
 
-const MainText = styled.h4`
-  margin-bottom: ${props => props.theme.padding.twentyFour};
+const MainText = styled.p`
     color: ${props => props.theme.colors.mainText};
-
 `;
 
 const RowDiv = styled.div`
@@ -74,8 +59,10 @@ const ColumnDivIphone = styled.div`
   ${props => props.theme.flex.flexColumnCenter};
   flex: 1;
   height: fit-content;
-  margin-top: 150;
   align-items: flex-end;
+  @media only screen and (max-width: 600px) {
+    align-items: center;
+  }
 `;
 
 const FullWidthDiv = styled.div`
@@ -90,13 +77,23 @@ const StyledImage = styled.img`
 `;
 
 const MarginTopDiv = styled.div`
-  margin-top: 60px;
+  margin-top: 50px;
+  width: 100%;
+  // padding-left: 16px;
+  // padding-right: 16px;
+  padding: 16px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
 `;
 
 const AppImage = styled.img`
   height: 90px;
   padding-right: 14px;
   width: auto;
+  @media only screen and (max-width: 600px) {
+    height: 60px;
+  }
 `;
 
 class MobilePortfolio extends React.Component {
