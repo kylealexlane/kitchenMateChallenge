@@ -7,7 +7,7 @@ import theme from '../../styles/theme'
 
 import { HeadingWrapper } from "components/HeadingWrapper";
 import { PrimaryButton } from "components/Button";
-import Particles from 'react-particles-js';
+import { ParticleBackground } from "components/ParticleBackground";
 import { ExternalLinks } from 'components/ExternalLinks';
 import "styles/main.css";
 // import { AboutSection } from "components/AboutSection";
@@ -70,6 +70,14 @@ const ColumnDiv = styled.div`
   margin-top: 150;
 `;
 
+const ColumnDivIphone = styled.div`
+  ${props => props.theme.flex.flexColumnCenter};
+  flex: 1;
+  height: fit-content;
+  margin-top: 150;
+  align-items: flex-end;
+`;
+
 const FullWidthDiv = styled.div`
   ${props => props.theme.flex.flexRowJustifyStart};
   flex-basis: 100%;
@@ -106,6 +114,7 @@ class MobilePortfolio extends React.Component {
   render() {
     return (
       <React.Fragment>
+        {/*<ParticleBackground numParticles={5} color={'#1E88E5'}/>*/}
         <HeadingWrapper>
           <MarginTopDiv>
           <ColumnDiv>
@@ -149,9 +158,9 @@ class MobilePortfolio extends React.Component {
                 <StyledImage src={ReactPNG} />
               </TechRowDiv>
             </ColumnDiv>
-            <ColumnDiv>
+            <ColumnDivIphone>
               <MobilePhone />
-            </ColumnDiv>
+            </ColumnDivIphone>
           </RowDiv>
           </ColumnDiv>
           </MarginTopDiv>

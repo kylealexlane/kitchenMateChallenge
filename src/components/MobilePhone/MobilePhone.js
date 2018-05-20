@@ -8,16 +8,18 @@ import { Link } from "react-router-dom";
 // import IphoneSA from 'assets/IphoneSABlack.png';
 import IphoneSA from 'assets/IphoneSA.png';
 
-import { fadeInRightBig, fadeInLeftBig } from 'react-animations';
+import { fadeInRight, fadeInLeft, fadeOutLeft, fadeOutRight } from 'react-animations';
 
-const width = 192;
-const height = 395;
+const width = 200;
+const height = width * 2.03;
 const multiplier = 1.7;
+const timer = 1000;
 
 const Wrapper = styled.div`
   height: ${height*multiplier}px;
   width: ${width*multiplier}px;
   margin: 32px;
+  ${props => props.theme.flex.flexColumnCenter};
 `;
 
 const Phone = styled.img`
@@ -29,32 +31,97 @@ const Phone = styled.img`
   // }
 `;
 
-const fadeInAnimationRight = keyframes`${fadeInRightBig}`;
+const fadeInAnimationRight = keyframes`${fadeInRight}`;
 
 const FadeInAnimationRight = styled.div`
-  animation: 1s ${fadeInAnimationRight};
+  ${props => props.theme.flex.flexColumnCenter};
+  animation: ${timer/1000}s ${fadeInAnimationRight};
 `;
 
-const fadeInAnimationLeft = keyframes`${fadeInLeftBig}`;
+const fadeOutAnimationRight = keyframes`${fadeOutRight}`;
+
+const FadeOutAnimationRight = styled.div`
+  ${props => props.theme.flex.flexColumnCenter};
+  animation: ${timer/1000}s ${fadeOutAnimationRight};
+`;
+
+const fadeOutAnimationLeft = keyframes`${fadeOutLeft}`;
+
+const FadeOutAnimationLeft = styled.div`
+  ${props => props.theme.flex.flexColumnCenter};
+  animation: ${timer/1000}s ${fadeOutAnimationLeft};
+`;
+
+const fadeInAnimationLeft = keyframes`${fadeInLeft}`;
 
 const FadeInAnimationLeft = styled.div`
-  animation: 1s ${fadeInAnimationLeft};
+  ${props => props.theme.flex.flexColumnCenter};
+  animation: ${timer/1000}s ${fadeInAnimationLeft};
 `;
 
-const MobilePhone = props => (
-  <Wrapper>
-    {props.animation === 'left' ?
-      <FadeInAnimationLeft>
-        <Phone src={IphoneSA} />
-      </FadeInAnimationLeft>
-      :
-      <FadeInAnimationRight>
-        <Phone src={IphoneSA} />
-      </FadeInAnimationRight>
-    }
+class MobilePhone extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animLeft: this.props.animation === 'left' ? true : false,
+      fadeOut: false,
+      pic: this.props.pic ? this.props.pic : IphoneSA,
+    };
+  }
 
-  </Wrapper>
-);
+  componentWillReceiveProps(nextProps){
+    if(nextProps.pic !== this.props.pic) {
+      this.setState({ fadeOut: true });
+      setTimeout(() => {
+        this.setState({ fadeOut: false, pic: nextProps.pic });
+        }, timer);
+
+    }
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        {this.state.animLeft ?
+          this.state.fadeOut ?
+            <FadeOutAnimationLeft>
+              <Phone src={this.state.pic}/>
+            </FadeOutAnimationLeft>
+          :
+            <FadeInAnimationLeft>
+              <Phone src={this.state.pic}/>
+            </FadeInAnimationLeft>
+          :
+          this.state.fadeOut ?
+            <FadeOutAnimationRight>
+              <Phone src={this.state.pic}/>
+            </FadeOutAnimationRight>
+            :
+            <FadeInAnimationRight>
+              <Phone src={this.state.pic}/>
+            </FadeInAnimationRight>
+        }
+      </Wrapper>
+    );
+  }
+}
+
+
+
+// const MobilePhone = props => (
+//   <Wrapper>
+//     {props.animation === 'left' ?
+//       <FadeInAnimationLeft>
+//         <Phone src={props.pic? props.pic : IphoneSA} />
+//       </FadeInAnimationLeft>
+//       :
+//       <FadeInAnimationRight>
+//         <Phone src={props.pic? props.pic : IphoneSA} />
+//       </FadeInAnimationRight>
+//     }
+//
+//   </Wrapper>
+// );
 
 // ExternalLinks.propTypes = {
 //     mainHeading: PropTypes.string.isRequired,

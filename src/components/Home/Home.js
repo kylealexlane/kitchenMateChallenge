@@ -77,7 +77,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Wrapper>
-          <ParticleBackground numParticles={7} />
+          <ParticleBackground numParticles={5} />
             <ExternalLinks />
               <HeadingWrapper>
                 {/*<MainHeading>{this.state.heading}</MainHeading>*/}

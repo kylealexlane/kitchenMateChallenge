@@ -16,9 +16,12 @@ const Wrapper = styled.div`
   z-index: 200;
   background: ${props =>
     props.background || 'transparent'};
-  // @media (max-width: ${props => props.theme.breakpoints.md}) {
-  //   padding: ${props => props.theme.padding.twentyFour} 0 0;
-  // }
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const CircleIconButton = styled.a`

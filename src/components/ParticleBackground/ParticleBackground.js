@@ -16,7 +16,17 @@ class ParticleBackground extends React.Component {
     super(props);
     this.state = {
       dotsFreq: this.props.numParticles ? this.props.numParticles : 7,
+      color: this.props.color ? this.props.color : '#fafafa'
     };
+  }
+
+  componentWillReceiveProps(nextProps){
+    if(nextProps.color !== this.props.color) {
+      this.setState({ color: nextProps.color });
+    }
+    if(nextProps.numParticles !== this.props.numParticles) {
+      this.setState({ dotsFreq: nextProps.numParticles });
+    }
   }
 
   render() {
@@ -29,17 +39,17 @@ class ParticleBackground extends React.Component {
               value: this.state.dotsFreq,
               density: {
                 enable: true,
-                value_area: 800
+                value_area: 800,
               }
             },
             color: {
-              value: mainBackground
+              value: this.state.color
             },
             shape: {
               type: "circle",
               stroke: {
                 width: 0,
-                color: "#000000"
+                color: this.state.color
               },
               polygon: {
                 nb_sides: 5
@@ -61,10 +71,10 @@ class ParticleBackground extends React.Component {
               }
             },
             line_linked: {
-              enable: false,
+              enable: true,
               distance: 300,
-              color: "#000000",
-              opacity: 0.03,
+              color: this.state.color,
+              opacity: 0.1,
               width: 1
             },
             interactivity: {

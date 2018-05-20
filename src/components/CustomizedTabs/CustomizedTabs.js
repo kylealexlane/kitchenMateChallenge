@@ -6,10 +6,15 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 const MarginTopDiv = styled.div`
-  @media (max-width: ${props => props.theme.breakpoints.sm}) {
-    margin-top: 100px;
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -82,7 +87,7 @@ class CustomizedTabs extends React.Component {
             <Tab
               disableRipple
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              label="Portfolio"
+              label=""
             />
             <Tab
               disableRipple
@@ -97,7 +102,12 @@ class CustomizedTabs extends React.Component {
             <Tab
               disableRipple
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              label="Tab 3"
+              label="FN MMS"
+            />
+            <Tab
+              disableRipple
+              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              label="Happy Hip"
             />
           </Tabs>
         </div>

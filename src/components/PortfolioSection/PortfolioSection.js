@@ -20,6 +20,8 @@ import { CustomizedTabs } from "components/CustomizedTabs";
 import { MobilePortfolio } from 'components/MobilePortfolio';
 import { ParticleBackground } from 'components/ParticleBackground';
 import { SproutPage } from 'components/SproutPage';
+import { FNApp } from 'components/FNApp';
+import { HappyHip } from 'components/HappyHip';
 
 
 const Wrapper = styled.div`
@@ -34,7 +36,21 @@ const Wrapper = styled.div`
   height: 100vh;
   @media (max-width: ${props => props.theme.breakpoints.lg}) {
     height: auto;
-    margin-top: 300px;
+    margin-top: 170px;
+  }
+`;
+
+const PortfolioTitle = styled.div`
+  ${props => props.theme.flex.center};
+  color: ${props => props.theme.colors.mainText};
+  background: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  @media (max-width: ${props => props.theme.breakpoints.lg}) {
+    margin-top: -170px;
   }
 `;
 
@@ -102,10 +118,20 @@ class PortfolioSection extends React.Component {
     this.setState({ currentTab: value });
   }
 
+  renderParticleBackground() {
+    console.log('returning');
+    if(this.state.currentTab === 0) { return(<ParticleBackground numParticles={5} color={"#fafafa"}/>) }
+    if(this.state.currentTab === 1) { return(<ParticleBackground numParticles={2} color={"#1E88E5"}/>) }
+    if(this.state.currentTab === 2) { return(<ParticleBackground numParticles={2} color={"#2ebe68"}/>) }
+    if(this.state.currentTab === 3) { return(<ParticleBackground numParticles={2} color={"#fafafa"}/>) }
+    if(this.state.currentTab === 4) { return(<ParticleBackground numParticles={2} color={"#2ebe68"}/>) }
+    return(<ParticleBackground numParticles={5} color={"#fafafa"}/>)
+  }
+
   render() {
     return (
       <React.Fragment>
-        <ParticleBackground numParticles={2} />
+        {this.renderParticleBackground()}
         <Wrapper>
           <TabsDiv>
             <CustomizedTabs
@@ -114,28 +140,31 @@ class PortfolioSection extends React.Component {
           </TabsDiv>
           <ExternalLinks />
           { this.state.currentTab === 0 &&
-          <HeadingWrapper>
-            <MainHeading>
-              <Typist
-                cursor={{
-                  show: true,
-                  blink: true,
-                  element: '|',
-                  hideWhenDone: false,
-                  hideWhenDoneDelay: 2000,
-                }}
-              >
-                <span>^ Portfolio </span>
-              </Typist>
-            </MainHeading>
-            <MainText>
-              Click on the tabs above to check out my recent work
-            </MainText>
-          </HeadingWrapper>
+            <PortfolioTitle>
+              <HeadingWrapper>
+                <MainHeading>
+                  <Typist
+                    cursor={{
+                      show: true,
+                      blink: true,
+                      element: '|',
+                      hideWhenDone: false,
+                      hideWhenDoneDelay: 2000,
+                    }}
+                  >
+                    <span>^ Portfolio </span>
+                  </Typist>
+                </MainHeading>
+                <MainText>
+                  Click on the tabs above to check out my recent work
+                </MainText>
+              </HeadingWrapper>
+            </PortfolioTitle>
           }
           { this.state.currentTab === 1 && <MobilePortfolio />}
           { this.state.currentTab === 2 && <SproutPage />}
-
+          { this.state.currentTab === 3 && <FNApp />}
+          { this.state.currentTab === 4 && <HappyHip />}
         </Wrapper>
       </React.Fragment>
     );

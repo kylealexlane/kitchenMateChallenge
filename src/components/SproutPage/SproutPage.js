@@ -26,10 +26,18 @@ import ReactPNG from 'assets/pngs/react.png';
 import DBPNG from 'assets/pngs/db.png';
 import MySQLPHPPNG from 'assets/pngs/phpsql.png';
 
+import SproutHome from 'assets/sproutScreenshots/SproutHome.png';
+import SproutTrackHome from 'assets/sproutScreenshots/SproutTrackHome.png';
+import SproutDrinkUp from 'assets/sproutScreenshots/SproutDrinkUp.png';
+import SproutMeTab from 'assets/sproutScreenshots/SproutMeTab.png';
+import SproutAppsDevices from 'assets/sproutScreenshots/SproutAppsDevices.png';
+import { ParticleBackground } from 'components/ParticleBackground';
 
 import SproutLogo from 'assets/pngs/SproutLogoCropped.png'
 
 
+
+const images = [SproutHome, SproutTrackHome, SproutDrinkUp, SproutAppsDevices, SproutMeTab];
 
 const MainHeading = styled.h1`
   color: ${props => props.theme.colors.mainText};
@@ -96,21 +104,35 @@ class SproutPage extends React.Component {
     this.state = {
       dotsFreq: 7,
       typingCompleted: true,
+      currentImage: SproutHome,
     };
   }
   componentDidMount() {
     document.title = "Kyle Lane";
+    this.rotateImages();
+  }
+
+  rotateImages() {
+    let currentIndex = 0;
+    setInterval(() => {
+      ++currentIndex;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      this.setState({ currentImage: images[currentIndex] });
+    }, 6000);
   }
 
   render() {
     return (
       <React.Fragment>
+        {/*<ParticleBackground numParticles={3} color={'#2ebe68'}/>*/}
         <HeadingWrapper>
           <MarginTopDiv>
           <ColumnDiv>
             <RowDiv>
               <ColumnDiv>
-                <MobilePhone animation={'left'}/>
+                <MobilePhone animation={'left'} pic={this.state.currentImage}/>
               </ColumnDiv>
               <ColumnDiv>
                 <HeaderRowDiv>
