@@ -1,7 +1,7 @@
 import React from "react";
 
-import { AboutSection } from "../../components/AboutSection";
+import { AboutController } from "../../components/AboutController";
 
-const AboutContainer = () => <AboutSection />;
+const AboutContainer = () => <AboutController />;
 
 export default AboutContainer;

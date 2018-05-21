@@ -48,6 +48,38 @@ const styles = theme => ({
   tabsIndicator: {
     backgroundColor: '#fafafa',
   },
+  noWidth: {
+    zIndex: 1000,
+    textTransform: 'initial',
+    minWidth: 0,
+    // maxWidth: 72,
+    fontWeight: theme.typography.fontWeightRegular,
+    marginRight: 3,
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+    '&:hover': {
+      color: '#fafafa',
+      opacity: 1,
+    },
+    '&$tabSelected': {
+      color: '#fafafa',
+      fontWeight: theme.typography.fontWeightMedium,
+    },
+    '&:focus': {
+      color: '#fafafa',
+    },
+    width: 0,
+  },
   tabRoot: {
     zIndex: 1000,
     textTransform: 'initial',
@@ -108,7 +140,7 @@ class CustomizedTabs extends React.Component {
           >
             <Tab
               disableRipple
-              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              classes={{ root: classes.noWidth, selected: classes.noWidth }}
               label=""
             />
             <Tab
