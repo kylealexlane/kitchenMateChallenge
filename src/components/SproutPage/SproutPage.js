@@ -68,14 +68,14 @@ const ColumnDivPhone = styled.div`
   height: fit-content;
   @media only screen and (max-width: 900px) {
     order: 1;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 const MarginTopDiv = styled.div`
   margin-top: 50px;
   width: 100%;
-  // padding-left: 16px;
-  // padding-right: 16px;
   padding: 16px;
   @media only screen and (max-width: 600px) {
     margin-top: 40px;

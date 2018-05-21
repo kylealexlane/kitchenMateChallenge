@@ -111,12 +111,12 @@ class PortfolioSection extends React.Component {
 
   renderParticleBackground() {
     console.log('returning');
-    if(this.state.currentTab === 0) { return(<ParticleBackground numParticles={5} color={"#fafafa"}/>) }
-    if(this.state.currentTab === 1) { return(<ParticleBackground numParticles={2} color={"#1E88E5"}/>) }
-    if(this.state.currentTab === 2) { return(<ParticleBackground numParticles={2} color={"#2ebe68"}/>) }
-    if(this.state.currentTab === 3) { return(<ParticleBackground numParticles={2} color={"#fafafa"}/>) }
-    if(this.state.currentTab === 4) { return(<ParticleBackground numParticles={2} color={"#2ebe68"}/>) }
-    return(<ParticleBackground numParticles={5} color={"#fafafa"}/>)
+    if(this.state.currentTab === 0) { return(<ParticleBackground numParticles={5} color={this.props.theme.colors.mainText}/>) }
+    if(this.state.currentTab === 1) { return(<ParticleBackground numParticles={9} color={"#1E88E5"}/>) }
+    if(this.state.currentTab === 2) { return(<ParticleBackground numParticles={9} color={"#2ebe68"}/>) }
+    if(this.state.currentTab === 3) { return(<ParticleBackground numParticles={9} color={this.props.theme.colors.mainText}/>) }
+    if(this.state.currentTab === 4) { return(<ParticleBackground numParticles={9} color={"#2ebe68"}/>) }
+    return(<ParticleBackground numParticles={5} color={this.props.theme.colors.mainText}/>)
   }
 
   render() {

@@ -49,7 +49,7 @@ injectGlobal`
   }
   @media only screen and (max-width: 600px) {
     h1 {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 64px;
     }

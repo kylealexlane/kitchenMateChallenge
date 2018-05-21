@@ -52,7 +52,7 @@ const FadeDiv = styled.div`
     position: absolute;
     height: 100vh;
     width: 100%;
-    animation: 1s ${fadeAnimation};
+    animation: 4s ${fadeAnimation};
 `;
 
 class Home extends React.Component {
@@ -71,7 +71,9 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Wrapper>
-          <ParticleBackground numParticles={5} />
+          <FadeDiv>
+            <ParticleBackground numParticles={5} color={this.props.theme.colors.mainText}/>
+          </FadeDiv>
             <ExternalLinks />
               <HeadingWrapper>
                 {/*<MainHeading>{this.state.heading}</MainHeading>*/}

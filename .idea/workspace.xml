@@ -3,26 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="64562c3b-a070-4746-8a01-8fd02c9d3c6c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutSection/AboutSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutSection/AboutSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExternalLinks/ExternalLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExternalLinks/ExternalLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FNApp/FNApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FNApp/FNApp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HappyHip/HappyHip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HappyHip/HappyHip.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ipad/Ipad.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ipad/Ipad.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Master/Master.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Master/Master.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MobilePhone/MobilePhone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MobilePhone/MobilePhone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MobilePortfolio/MobilePortfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MobilePortfolio/MobilePortfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SproutPage/SproutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SproutPage/SproutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Portfolio/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Portfolio/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global-styles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,14 +21,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39658704">
+    <splitter split-orientation="horizontal" split-proportion="0.46621162">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="CustomizedTabs.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="CustomizedTabs.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+                <state relative-caret-position="316">
+                  <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -55,7 +40,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/ExternalLinks/ExternalLinks.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1054">
-                  <caret line="96" column="19" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+                  <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -67,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/MobilePortfolio/MobilePortfolio.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="271">
-                  <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+                  <caret line="71" selection-start-line="71" selection-end-line="71" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -75,11 +60,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HappyHip.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HappyHip.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/HappyHip/HappyHip.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+                <state relative-caret-position="248">
+                  <caret line="56" column="2" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -91,19 +76,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/MobilePhone/MobilePhone.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="74">
-                  <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="50" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HeadingWrapper.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/HeadingWrapper/HeadingWrapper.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+                  <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="50" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -114,8 +87,8 @@
           <file leaf-file-name="theme.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/styles/theme.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+                <state relative-caret-position="240">
+                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
@@ -123,8 +96,20 @@
           <file leaf-file-name="PortfolioSection.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="491">
-                  <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+                <state relative-caret-position="361">
+                  <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -140,8 +125,8 @@
           <file leaf-file-name="global-styles.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/styles/global-styles.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="337">
-                  <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="45" />
+                <state relative-caret-position="276">
+                  <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#49#0" expanded="true" />
                   </folding>
@@ -153,11 +138,23 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="SproutPage.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SproutPage.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/SproutPage/SproutPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+                <state relative-caret-position="293">
+                  <caret line="120" column="60" lean-forward="true" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParticleBackground.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="258">
+                  <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -169,7 +166,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/FNApp/FNApp.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="836">
-                  <caret line="78" column="2" lean-forward="true" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
+                  <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -181,7 +178,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/Ipad/Ipad.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="360">
-                  <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+                  <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -251,7 +248,6 @@
         <option value="$PROJECT_DIR$/src/styles/global.less" />
         <option value="$PROJECT_DIR$/src/styles/main.css" />
         <option value="$PROJECT_DIR$/src/components/SproutPage/index.js" />
-        <option value="$PROJECT_DIR$/src/styles/theme.js" />
         <option value="$PROJECT_DIR$/src/components/FNApp/index.js" />
         <option value="$PROJECT_DIR$/src/components/Ipad/index.js" />
         <option value="$PROJECT_DIR$/src/components/HappyHip/index.js" />
@@ -259,9 +255,7 @@
         <option value="$PROJECT_DIR$/src/containers/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/containers/Portfolio/Portfolio.js" />
         <option value="$PROJECT_DIR$/src/containers/About/About.js" />
-        <option value="$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js" />
         <option value="$PROJECT_DIR$/src/components/Master/Master.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/AboutSection/AboutSection.js" />
         <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/404.html" />
@@ -269,15 +263,18 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/routes/index.js" />
         <option value="$PROJECT_DIR$/src/components/ExternalLinks/ExternalLinks.js" />
-        <option value="$PROJECT_DIR$/src/styles/global-styles.js" />
-        <option value="$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js" />
-        <option value="$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js" />
         <option value="$PROJECT_DIR$/src/components/MobilePhone/MobilePhone.js" />
         <option value="$PROJECT_DIR$/src/components/MobilePortfolio/MobilePortfolio.js" />
         <option value="$PROJECT_DIR$/src/components/FNApp/FNApp.js" />
         <option value="$PROJECT_DIR$/src/components/Ipad/Ipad.js" />
-        <option value="$PROJECT_DIR$/src/components/HappyHip/HappyHip.js" />
         <option value="$PROJECT_DIR$/src/components/SproutPage/SproutPage.js" />
+        <option value="$PROJECT_DIR$/src/components/HappyHip/HappyHip.js" />
+        <option value="$PROJECT_DIR$/src/styles/global-styles.js" />
+        <option value="$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js" />
+        <option value="$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/styles/theme.js" />
+        <option value="$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js" />
       </list>
     </option>
   </component>
@@ -371,6 +368,13 @@
               <item name="personal-portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Ipad" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -386,6 +390,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="MobilePortfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ParticleBackground" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personal-portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -459,12 +470,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526502821715</updated>
       <workItem from="1526502823108" duration="1534000" />
-      <workItem from="1526504912176" duration="82782000" />
+      <workItem from="1526504912176" duration="84407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84316000" />
+    <option name="totallyTimeSpent" value="85941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="22" width="1666" height="1003" extended-state="0" />
@@ -568,16 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ParticleBackground/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -608,16 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="44" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,7 +732,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/HeadingWrapper/HeadingWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -751,47 +742,10 @@
     <entry file="file://$PROJECT_DIR$/src/styles/main.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/global-styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ExternalLinks/ExternalLinks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
-          <caret line="96" column="19" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -801,7 +755,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/MobilePortfolio/MobilePortfolio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -811,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/FNApp/FNApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
-          <caret line="78" column="2" lean-forward="true" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
+          <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -824,7 +778,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/MobilePhone/MobilePhone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="50" />
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="50" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -834,7 +788,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Ipad/Ipad.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -843,8 +797,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HappyHip/HappyHip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+        <state relative-caret-position="248">
+          <caret line="56" column="2" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/global-styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PortfolioSection/PortfolioSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -853,8 +827,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SproutPage/SproutPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="293">
+          <caret line="120" column="60" lean-forward="true" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ParticleBackground/ParticleBackground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CustomizedTabs/CustomizedTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

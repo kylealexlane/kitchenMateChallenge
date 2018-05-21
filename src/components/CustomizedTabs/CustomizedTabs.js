@@ -108,7 +108,7 @@ class CustomizedTabs extends React.Component {
           >
             <Tab
               disableRipple
-              classes={{ root: [classes.tabRoot, window.outerWidth <= 600 && classes.routeCentered], selected: classes.tabSelected }}
+              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
               label=""
             />
             <Tab
