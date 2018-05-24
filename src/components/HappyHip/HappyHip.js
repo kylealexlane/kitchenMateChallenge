@@ -23,7 +23,7 @@ const HeadingText = styled.h3`
   color: ${props => props.theme.colors.mainText};
 `;
 
-const MainText = styled.h4`
+const MainText = styled.p`
   margin-bottom: ${props => props.theme.padding.twentyFour};
     color: ${props => props.theme.colors.mainText};
 
@@ -147,12 +147,12 @@ class HappyHip extends React.Component {
                   </MainText>
                   <HeadingText>SOLUTION</HeadingText>
                   <MainText>
-                    Super cheap (under 8$) physical device to get students moving that Institution could give out.
+                    Super affordable (under 8$) physical device to get students moving that Institution could give out.
                   </MainText>
                   <HeadingText>DEV</HeadingText>
                   <MainText>
-                    Prototyped with arduino, Happy Hip will track sitting time, steps, and movement type. Device will
-                    provide vibration when user is inactive for too long so students are physically reminded to be stay active.
+                    Developed an activity tracker that tracks steps, movement type, and time
+                    in a sedentary position.
                   </MainText>
                   <TechRowDiv>
                     <StyledImage src={Arduino} />

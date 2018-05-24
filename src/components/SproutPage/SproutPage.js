@@ -30,7 +30,7 @@ const HeadingText = styled.h3`
   color: ${props => props.theme.colors.mainText};
 `;
 
-const MainText = styled.h4`
+const MainText = styled.p`
   margin-bottom: ${props => props.theme.padding.twentyFour};
     color: ${props => props.theme.colors.mainText};
 `;
@@ -159,16 +159,15 @@ class SproutPage extends React.Component {
                   </MainText>
                   <HeadingText>DEV</HeadingText>
                   <MainText>
-                    Worked at Sprout developing their new mobile app in React Native for over 3 million users worldwide.
-                    Owned development of key features including home dashboard, activity tracking, all common components, and more.
+                    Worked at Sprout developing their flagship cross-platform mobile app in React Native for over 4 million users worldwide.
+                    Owned development of core features including activity
+                    tracking, Apple Health Kit integration, dashboard, profile, and more.
                   </MainText>
                   <TechRowDiv>
                     <StyledImage src={ApplePNG} />
                     <StyledImage src={AndroidPNG} />
-                    {/*<StyledImage src={CSSPNG} />*/}
                     <StyledImage src={JsPNG} />
                     <StyledImage src={ReactPNG} />
-                    {/*<StyledImage src={DBPNG} />*/}
                     <StyledImage src={MySQLPHPPNG} />
                   </TechRowDiv>
                 </ColumnDiv>

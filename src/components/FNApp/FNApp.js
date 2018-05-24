@@ -25,7 +25,7 @@ const HeadingText = styled.h3`
   color: ${props => props.theme.colors.mainText};
 `;
 
-const MainText = styled.h4`
+const MainText = styled.p`
   margin-bottom: ${props => props.theme.padding.twentyFour};
     color: ${props => props.theme.colors.mainText};
 
@@ -144,13 +144,13 @@ class FNApp extends React.Component {
                   </MainText>
                   <HeadingText>SOLUTION</HeadingText>
                   <MainText>
-                    Web app to track/record tasks and testing results and store in db. Simple login system and easy
+                    Web app to track/record tasks and testing results with Google calendar integration. Simple login system and easy
                     to understand UI.
                   </MainText>
                   <HeadingText>DEV</HeadingText>
                   <MainText>
-                    Worked at RJ. Burnside and had opportunity to design and develop this POC web app after visiting
-                    First Nations and seeing the loss of productivity.
+                    Worked at RJ. Burnside and proposed, designed, and developed this web application to
+                    improve organization and productivity within the First Nation Communities
                   </MainText>
                   <TechRowDiv>
                     <StyledImage src={HTMLPNG} />
