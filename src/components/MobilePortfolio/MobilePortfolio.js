@@ -155,7 +155,7 @@ class MobilePortfolio extends React.Component {
               </HeaderRowDiv>
               <HeadingText>PROBLEM</HeadingText>
               <MainText>
-                I love NBA analytics. Sadly NBA.com and all leading sports apps do not display deep player, team, or game info.
+                I love NBA analytics. Sadly mobile NBA.com and all leading sports apps do not display deep player, team, or game info.
               </MainText>
               <HeadingText>SOLUTION</HeadingText>
               <MainText>

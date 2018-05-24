@@ -98,9 +98,9 @@ class Home extends React.Component {
                           <span>I'm Kyle. </span>
                       </Typist>
                   </MainHeading>
-                {/*<SubHeading>I'm Kyle</SubHeading>*/}
                 <MainText>
-                  I love meeting new people and learning new things!
+                  I'm probably out mountain biking or drooling over Lebron's stats.<br />
+                  Get to know me better and see some of the work I've done!
                 </MainText>
                 <Links>
                   <StyledLink to="/about">

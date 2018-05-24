@@ -35,9 +35,12 @@ const StyledBorderButton = styled.button`
   color: ${props => props.theme.colors.mainText};
   background-color: transparent;
   border-color: ${props => props.theme.colors.secondaryText};
+  border-right-color: ${props => props.theme.colors.secondaryText};
+  border-left-color: ${props => props.theme.colors.secondaryText};
   border-width: 0px;
   border-right-width: ${props => props.middleButton ? '1px': '0px'};
   border-left-width: ${props => props.middleButton ? '1px': '0px'};
+  border-style: solid;
   :hover,
   :focus,
   :active {
