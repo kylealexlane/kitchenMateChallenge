@@ -10,8 +10,15 @@ import AndroidPNG from '../../assets/pngs/android.png';
 import CSSPNG from '../../assets/pngs/css.png';
 import JsPNG from '../../assets/pngs/javascript.png';
 import ReactPNG from '../../assets/pngs/react.png';
-import DeepStatLogo from '../../assets/DeepStats/DeepStatsLogoCropped.png'
+import DeepStatLogo from '../../assets/DeepStats/DeepStatsLogoCropped.png';
+import Lebron from '../../assets/DeepStats/lebron.png';
+import LebronShooting from '../../assets/DeepStats/lebronShooting.png';
+import Scores from '../../assets/DeepStats/scores.png';
 
+
+
+
+const images = [Lebron, LebronShooting, Scores];
 
 
 const MainHeading = styled.h1`
@@ -102,10 +109,23 @@ class MobilePortfolio extends React.Component {
     this.state = {
       dotsFreq: 7,
       typingCompleted: true,
+      currentImage: Lebron,
     };
   }
   componentDidMount() {
     document.title = "K.L | DeepStats";
+    this.rotateImages();
+  }
+
+  rotateImages() {
+    let currentIndex = 0;
+    setInterval(() => {
+      ++currentIndex;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      this.setState({ currentImage: images[currentIndex] });
+    }, 5000);
   }
 
   render() {
@@ -145,7 +165,7 @@ class MobilePortfolio extends React.Component {
               <HeadingText>DEV</HeadingText>
               <MainText>
                 Developed and designed individually using react native.
-                Expanding team to release to Apple Store and Google Play by late april.
+                Expanding team to release to Apple Store and Google Play by late June.
               </MainText>
               <TechRowDiv>
                 <StyledImage src={ApplePNG} />
@@ -156,7 +176,7 @@ class MobilePortfolio extends React.Component {
               </TechRowDiv>
             </ColumnDiv>
             <ColumnDivIphone>
-              <MobilePhone />
+              <MobilePhone pic={this.state.currentImage}/>
             </ColumnDivIphone>
           </RowDiv>
           </ColumnDiv>

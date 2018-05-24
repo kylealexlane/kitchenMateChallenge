@@ -119,7 +119,7 @@ class SproutPage extends React.Component {
         currentIndex = 0;
       }
       this.setState({ currentImage: images[currentIndex] });
-    }, 6000);
+    }, 5000);
   }
 
   render() {
