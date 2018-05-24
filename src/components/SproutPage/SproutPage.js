@@ -19,7 +19,7 @@ import SproutAppsDevices from '../../assets/sproutScreenshots/SproutAppsDevices.
 import SproutLogo from '../../assets/pngs/SproutLogoCropped.png'
 
 
-const images = [SproutTrackHome, SproutDrinkUp, SproutAppsDevices, SproutMeTab, SproutHome];
+const images = [SproutHome, SproutTrackHome, SproutDrinkUp, SproutAppsDevices, SproutMeTab];
 
 const MainHeading = styled.h1`
   color: ${props => props.theme.colors.mainText};
@@ -103,7 +103,7 @@ class SproutPage extends React.Component {
     this.state = {
       dotsFreq: 7,
       typingCompleted: true,
-      currentImage: SproutTrackHome,
+      currentImage: SproutHome,
     };
   }
   componentDidMount() {

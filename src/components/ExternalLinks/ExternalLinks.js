@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 import { Icon } from "antd/lib/index";
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const CircleIconButton = styled.a`
   ${props => props.theme.flex.center};
   background: ${props => props.theme.colors.mainBackground };
   border-radius: 100%;
-  // border: 1px solid ${props => props.theme.colors.mainText };
+  border: 0px solid ${props => props.theme.colors.mainText };
   // border-color: ${props => props.theme.colors.mainText };
   color: ${props => props.theme.colors.mainText };
   width: 32px;
@@ -46,7 +46,6 @@ const Buttons = styled.div`
 `;
 
 const SocialButtonWrapper = CircleIconButton.extend`
-  border: none;
   &:hover,
   &:active,
   &:focus {
@@ -79,8 +78,12 @@ const SocialButtonIcon = styled(Icon)`
 // const Description = styled.h4``;
 
 const SocialButton = props => (
-    <SocialButtonWrapper color={props.color} href={props.href} target="_new">
-        <SocialButtonIcon type={props.icon} style={{ fontSize: 22 }} />
+    <SocialButtonWrapper
+      color={props.color}
+      href={props.href}
+      target="_new"
+      style={{ borderWidth: props.border ? 1 : 0 }}>
+        <SocialButtonIcon type={props.icon} style={{ fontSize: 22, color: props.color }} />
     </SocialButtonWrapper>
 );
 
@@ -91,38 +94,39 @@ const ExternalLinks = props => (
               <SocialButton
                 // href="https://www.facebook.com/kyle97"
                 // target="_new"
-                // color={'blue'}
+                color={props.fromHome ? props.theme.colors.secondaryText : props.theme.colors.mainText}
+                // border={true}
                 icon="home"
               />
             </Link>
             <SocialButton
                 href="https://www.facebook.com/kyle97"
                 target="_new"
-                // color={'blue'}
+                // color={props.theme.colors.mainText}
                 icon="facebook"
             />
             <SocialButton
                 href="https://www.instagram.com/kyleeelane/"
                 target="_new"
-                // color={'blue'}
+                // color={props.theme.colors.mainText}
                 icon="instagram"
             />
             <SocialButton
                 href="https://www.linkedin.com/in/kylealexlane/"
                 target="_new"
-                // color={'blue'}
+                // color={props.theme.colors.mainText}
                 icon="linkedin"
             />
             <SocialButton
                 href="https://github.com/kylealexlane"
                 target="_new"
-                // color={'blue'}
+                // color={props.theme.colors.mainText}
                 icon="github"
             />
             <SocialButton
                 href="mailto:kalane@edu.uwaterloo.ca?Subject=Hello"
                 target="_new"
-                // color={'blue'}
+                // color={props.theme.colors.mainText}
                 icon="mail"
             />
             {/*<SocialButton*/}
@@ -154,4 +158,4 @@ const ExternalLinks = props => (
 //     children: null
 // };
 
-export default ExternalLinks;
+export default withTheme(ExternalLinks);

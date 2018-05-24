@@ -15,11 +15,35 @@ const StyledPrimaryButton = StyledButton.extend`
   color: ${props => props.theme.colors.mainText};
   background-color: ${props => props.theme.colors.mainBackground};
   border-color: ${props => props.theme.colors.mainText};
+  margin-right: 4px;
+  margin-left: 4px;
   :hover,
   :focus,
   :active {
     background-color: ${props => props.theme.colors.mainText};
     // border-color: ${props => props.theme.colors.mainText};
+    color: ${props => props.theme.colors.mainBackground};
+  }
+`;
+
+const StyledBorderButton = styled.button`
+  padding: ${props => props.theme.padding.eight}
+    ${props => props.theme.padding.sixteen};
+  letter-spacing: 0.5px;
+  transition: 0.3s all;
+  cursor: pointer;
+  color: ${props => props.theme.colors.mainText};
+  background-color: transparent;
+  border-color: ${props => props.theme.colors.secondaryText};
+  border-width: 0px;
+  border-right-width: ${props => props.middleButton ? '1px': '0px'};
+  border-left-width: ${props => props.middleButton ? '1px': '0px'};
+  :hover,
+  :focus,
+  :active {
+    background-color: ${props => props.theme.colors.mainText};
+    border-radius: 0px;
+    border-color: ${props => props.theme.colors.mainText};
     color: ${props => props.theme.colors.mainBackground};
   }
 `;
@@ -43,6 +67,12 @@ const PrimaryButton = props => (
   </StyledPrimaryButton>
 );
 
+const BorderButton = props => (
+  <StyledBorderButton middleButton={props.middleButton} size="large">
+    {props.children}
+  </StyledBorderButton>
+);
+
 PrimaryButton.propTypes = {
   children: PropTypes.node.isRequired
 };
@@ -63,4 +93,4 @@ DefaultButton.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export { PrimaryButton, SecondaryButton, DefaultButton };
+export { PrimaryButton, SecondaryButton, DefaultButton, BorderButton };

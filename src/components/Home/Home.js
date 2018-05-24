@@ -6,11 +6,11 @@ import 'react-typist/dist/Typist.css';
 import { fadeIn } from 'react-animations';
 import Particles from 'react-particles-js';
 
-import { PrimaryButton } from "../../components/Button";
+import { BorderButton } from "../../components/Button";
 import { ExternalLinks } from '../../components/ExternalLinks';
 import { ParticleBackground } from '../../components/ParticleBackground';
 import { HeadingWrapper } from '../../components/HeadingWrapper';
-
+import Resume from "../../assets/resume.pdf";
 
 const Wrapper = styled.div`
   ${props => props.theme.flex.center};
@@ -38,6 +38,11 @@ const MainText = styled.h4`
 `;
 
 const Links = styled.p``;
+
+const StyledLink = styled(Link)`
+  margin: 0;
+  padding: 0;
+`;
 
 const StyledParticles = styled(Particles)`
     position: absolute;
@@ -74,7 +79,7 @@ class Home extends React.Component {
           <FadeDiv>
             <ParticleBackground numParticles={5} color={this.props.theme.colors.mainText}/>
           </FadeDiv>
-            <ExternalLinks />
+            <ExternalLinks fromHome={true} />
               <HeadingWrapper>
                 {/*<MainHeading>{this.state.heading}</MainHeading>*/}
                   <MainHeading>
@@ -98,12 +103,19 @@ class Home extends React.Component {
                   I love meeting new people and learning new things!
                 </MainText>
                 <Links>
-                  <Link to="/about">
-                    <PrimaryButton>About Me</PrimaryButton>
-                  </Link>{" "}
-                  <Link to="/portfolio">
-                    <PrimaryButton>Portfolio</PrimaryButton>
-                  </Link>
+                  <StyledLink to="/about">
+                    <BorderButton>About Me</BorderButton>
+                  </StyledLink>
+                  <StyledLink to="/portfolio">
+                    <BorderButton middleButton={true} >Portfolio</BorderButton>
+                  </StyledLink>
+                  <a
+                    onClick={() => {
+                      window.open(Resume);
+                    }}
+                  >
+                    <BorderButton >Resume</BorderButton>
+                  </a>
                 </Links>
               </HeadingWrapper>
         </Wrapper>

@@ -1,1 +1,1 @@
-export { PrimaryButton, SecondaryButton, DefaultButton } from "./Button.js";
+export { PrimaryButton, SecondaryButton, DefaultButton, BorderButton } from "./Button.js";
