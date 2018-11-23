@@ -2,39 +2,34 @@ const colors = {
   white: "#FCFCFC",
   black: "#171717",
   grey: "#333333",
-  blue: "#1D9696",
-  yellowGreen: "#B4EC51",
-  cogniteBlue: "#749bad",
-  cogniteGrey: "#778084",
-  slikPurple: "#896b8c",
-  slikBlue: "#6d788e",
-  jobmineBlue: "#153154",
-  jobmineGrey: "#778084",
-  pathGreen: "#3a7048",
-  pathGrey: "#778084",
-  planItBlue: "#396770",
-  planItGreen: "#39705a",
+  blueHighlight: "#108ee9",
+  greyHighlight: "#aaa",
 
-  // mainBackground: "#FCFCFC",
+  mainBackground: "#FFFFFF",
+  secondaryBackground: "#FCFCFC",
+
+  mainText: "#171717",
+  secondaryText: "#333333",
+
+  mainAccent: "#f76600",
+  secondaryAccent: "#B4EC51",
+
+  // mainBackground: "#202124",
   // secondaryBackground: "#FCFCFC",
   //
-  // mainText: "#171717",
-  // secondaryText: "#333333",
+  // mainText: "#fafafa",
+  // secondaryText: "#5f6368",
   //
   // mainAccent: "#1D9696",
   // secondaryAccent: "#B4EC51",
-
-  mainBackground: "#202124",
-  secondaryBackground: "#FCFCFC",
-
-  mainText: "#fafafa",
-  secondaryText: "#5f6368",
-
-  mainAccent: "#1D9696",
-  secondaryAccent: "#B4EC51",
 };
 
 export default {
+  baseWrapper: {
+    paddingTop: 12,
+    marginRight: 32,
+    marginLeft: 32,
+  },
   dimensions: {
     subSection: {
       margin: "0 auto"
@@ -58,30 +53,6 @@ export default {
     text: {
       black: colors.black /* base */,
       white: colors.white
-    },
-    background: {
-      white: colors.white,
-      black: colors.black,
-      grey: colors.grey,
-      blue: colors.blue,
-      blueGradient: `linear-gradient(to bottom right, ${colors.blue}, ${
-        colors.yellowGreen
-      })`,
-      cogniteGradient: `linear-gradient(to bottom right, ${
-        colors.cogniteBlue
-      }, ${colors.cogniteGrey})`,
-      slikGradient: `linear-gradient(to bottom right, ${colors.slikPurple}, ${
-        colors.slikBlue
-      })`,
-      jobmineGradient: `linear-gradient(to bottom right, ${
-        colors.jobmineBlue
-      }, ${colors.jobmineGrey})`,
-      pathGradient: `linear-gradient(to bottom right, ${colors.pathGreen}, ${
-        colors.pathGrey
-      })`,
-      planItGradient: `linear-gradient(to bottom right, ${colors.planItBlue}, ${
-        colors.planItGreen
-      })`
     },
     mainBackground: colors.mainBackground,
     secondaryBackground: colors.secondaryBackground,
@@ -107,13 +78,18 @@ export default {
     spaceBetween: "display: flex; justify-content: space-between",
     spaceAround: "display: flex; justify-content: space-around",
     center: "display: flex; align-items: center; justify-content: center",
-    flexStart:
-      "display: flex; justify-content: flex-start; align-items: flex-start;",
+    topCenter: "display: flex; align-items: flex-start; justify-content: center",
+    flexStart: "display: flex; justify-content: flex-start; align-items: flex-start;",
     flexEnd: "display: flex; justify-content: flex-end",
     flexRowEnd: "display: flex; flex-direction: row; justify-content: flex-end; align-items: center;",
     flexRowBetween: "display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;",
-    flexColumnCenter: "display: flex; flex: 1; flex-direction: column; justify-content: center, align-items: center;",
+    flexColumnCenter: "display: flex; flex-direction: column; justify-content: center, align-items: center;",
+    flexColumnTopCenter: "display: flex; flex: 1; flex-direction: column; justify-content: flex-start, align-items: center;",
     flexRowJustifyStart: "display: flex; flex-direction: row; justify-content: flex-start; align-items: center;",
+  },
+  fontSize: {
+    mainHeading: "32px",
+    subHeading: "24px"
   },
   breakpoints: {
     sm: "576px",
@@ -121,4 +97,5 @@ export default {
     lg: "992px",
     xl: "1200px"
   },
+  logoFont: "'Quicksand', sans-serif;",
 };
