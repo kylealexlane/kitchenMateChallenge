@@ -1,15 +1,5 @@
 import AboutContainer from "./About";
 import HomeContainer from "./Home";
-import BaseContainer from "./Base";
-import PlayersContainer from "./Players"
-import TeamsContainer from "./Teams"
-import GoaliesContainer from "./Goalies"
-import ModelContainer from "./Model"
+import PortfolioContainer from "./Portfolio";
 
-export { AboutContainer,
-  HomeContainer,
-  BaseContainer,
-  TeamsContainer,
-  ModelContainer,
-  GoaliesContainer,
-  PlayersContainer };
+export { AboutContainer, HomeContainer, PortfolioContainer };

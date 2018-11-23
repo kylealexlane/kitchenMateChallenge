@@ -12,7 +12,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    background: #fff;
+    background: #202124;
   }
 
   h1 {
