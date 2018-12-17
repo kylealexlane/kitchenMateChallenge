@@ -146,8 +146,8 @@ class AboutController extends React.Component {
               <AvatarText>
                 <Heading>What About the Rainy Days?</Heading>
                 {"Along with playing sports I'm just as passionate about the analytics and statistics side of athletics. " +
-                "I'm currently developing an app for deeper nba analytics, with the end goal to implement neural networks to better " +
-                "predict player/team performance. Oh... I also really love board games (anyone up for Catan?!?)."}
+                "I'm currently developing new metrics for valuing NHL players at thepuckluck.com along with creating an  " +
+                "nba app for displaying more in depth statistics. Oh... I also really love board games (anyone up for Catan?!?)."}
                 {/*<br />*/}
                 {/*<br />*/}
                 {/*<Link to="/portfolio">*/}
@@ -163,10 +163,10 @@ class AboutController extends React.Component {
               <AvatarText>
                 <Heading>Okay Okay.. Now The Good Stuff</Heading>
                 {"I know it sounds cliche, but I really enjoy learning new things and diving into difficult challenges. " +
-                "Whether it's impulsively signing up for half-marathons (hopefully a full marathon soon) or learning " +
-                "new programming languages in free time, I like staying busy and being pushed. I hope to continue " +
-                "growing and being pushed through my next internship opportunity, which I am currently seeking " +
-                "for Fall 2018."}
+                "Whether it's impulsively signing up for half-marathons (hopefully a full marathon soon) or developing " +
+                "new sport related applications in my free time, I like staying busy and being pushed. I am currently seeking " +
+                "an internship for Summer 2019 and would love to chat if you are interested in learning more about my " +
+                "experiences!"}
               </AvatarText>
             </TextAvatarGroup>
             }

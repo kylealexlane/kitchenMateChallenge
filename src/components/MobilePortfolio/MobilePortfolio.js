@@ -159,15 +159,13 @@ class MobilePortfolio extends React.Component {
               </MainText>
               <HeadingText>SOLUTION</HeadingText>
               <MainText>
-                Core functionality currently includes live in-depth game scores, comprehensive
-                player stat pages, and standings which present more analytics than all other
-                leading sports apps (TheScore, SportsNet...)
+                Core functionality currently includes live in-depth game scores with advanced stats, comprehensive
+                player stat pages, and standings which present more analytics than other leading sports apps
               </MainText>
               <HeadingText>DEV</HeadingText>
               <MainText>
                 Developed and designed individually using react native.
-                Releasing to Apple Store and Google Play by late June with goal to develop ML/neural net player prediction
-                methods later this summer.
+                Releasing to Apple Store and Google Play later this term.
               </MainText>
               <TechRowDiv>
                 <StyledImage src={ApplePNG} />
