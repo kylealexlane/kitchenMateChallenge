@@ -122,11 +122,6 @@ class AboutMeTabs extends React.Component {
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
               label="The Good Stuff"
             />
-            {/*<Tab*/}
-              {/*disableRipple*/}
-              {/*classes={{ root: classes.tabRoot, selected: classes.tabSelected }}*/}
-              {/*label="Happy Hip"*/}
-            {/*/>*/}
           </Tabs>
         </div>
       </MarginTopDiv>
