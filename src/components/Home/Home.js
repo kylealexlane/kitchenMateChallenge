@@ -99,7 +99,7 @@ class Home extends React.Component {
                       </Typist>
                   </MainHeading>
                 <MainText>
-                  I'm probably out mountain biking or drooling over Lebron's stats.<br />
+                  I'm an engineering student with passion for sports and analytics.<br />
                   Get to know me better and see some of the work I've done!
                 </MainText>
                 <Links>
