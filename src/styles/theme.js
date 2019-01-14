@@ -11,7 +11,7 @@ const colors = {
   //
   // mainAccent: "#1D9696",
   // secondaryAccent: "#B4EC51",
-
+  //
   mainBackground: "#202124",
   secondaryBackground: "#FCFCFC",
 

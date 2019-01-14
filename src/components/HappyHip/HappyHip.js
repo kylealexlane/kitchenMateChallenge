@@ -68,7 +68,7 @@ const ColumnDivPhone = styled.div`
 `;
 
 const MarginTopDiv = styled.div`
-  margin-top: 50px;
+  margin-top: 70px;
   width: 100%;
   padding: 16px;
   @media only screen and (max-width: 600px) {

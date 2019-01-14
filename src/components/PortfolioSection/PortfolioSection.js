@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   background-position: center;
   background-color: ${props => props.theme.colors.mainBackground};
   // height: calc(100vh - ${props => props.theme.dimensions.navbar.height});
-  height: 100vh;
+  min-height: 100vh;
   @media (max-width: ${props => props.theme.breakpoints.lg}) {
     height: auto;
     margin-top: 170px;

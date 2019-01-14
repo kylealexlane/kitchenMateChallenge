@@ -84,7 +84,7 @@ const StyledImage = styled.img`
 `;
 
 const MarginTopDiv = styled.div`
-  margin-top: 50px;
+  margin-top: 70px;
   width: 100%;
   // padding-left: 16px;
   // padding-right: 16px;

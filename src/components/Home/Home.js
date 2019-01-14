@@ -5,12 +5,12 @@ import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import { fadeIn } from 'react-animations';
 import Particles from 'react-particles-js';
-
 import { BorderButton } from "../../components/Button";
 import { ExternalLinks } from '../../components/ExternalLinks';
 import { ParticleBackground } from '../../components/ParticleBackground';
 import { HeadingWrapper } from '../../components/HeadingWrapper';
 import Resume from "../../assets/resume.pdf";
+
 
 const Wrapper = styled.div`
   ${props => props.theme.flex.center};
@@ -42,6 +42,10 @@ const Links = styled.p``;
 const StyledLink = styled(Link)`
   margin: 0;
   padding: 0;
+`;
+
+const StyledA = styled.a`
+  color: #1D9696;
 `;
 
 const StyledParticles = styled(Particles)`
@@ -99,8 +103,8 @@ class Home extends React.Component {
                       </Typist>
                   </MainHeading>
                 <MainText>
-                  I'm an engineering student with passion for sports and analytics.<br />
-                  Get to know me better and see some of the work I've done!
+                  I'm an engineering student with passion for sports and analytics!<br />
+                  Check out my current project <StyledA href="https://www.thepuckluck.com">thepuckluck.com</StyledA> or discover more below.
                 </MainText>
                 <Links>
                   <StyledLink to="/about">
