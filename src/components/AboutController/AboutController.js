@@ -90,6 +90,10 @@ const Heading = styled.h3`
   margin-bottom: ${props => props.theme.padding.twentyFour};
 `;
 
+const StyledA = styled.a`
+  color: #1D9696;
+`;
+
 class AboutController extends React.Component {
   constructor(props) {
     super(props);
@@ -132,7 +136,7 @@ class AboutController extends React.Component {
                 <AvatarImage src={AvatarOne} alt="AvatarOne" />
                 <Heading>So... Who Am I?</Heading>
                 <AvatarText>
-                  {"Well, I'm currently studying Systems Design Engineering at the University of Waterloo, pursuing an " +
+                  {"I'm currently studying Systems Design Engineering at the University of Waterloo, pursuing an " +
                   "option in Intelligent Systems and minor in Economics. More importantly though, I love staying active " +
                   "and meeting new people. If I'm not studying, you can find me out on the trails mountain biking, organizing " +
                   "some pick-up games with friends, or trying out that 'awesome' new restaurant."}
@@ -146,8 +150,10 @@ class AboutController extends React.Component {
               <AvatarText>
                 <Heading>What About the Rainy Days?</Heading>
                 {"Along with playing sports I'm just as passionate about the analytics and statistics side of athletics. " +
-                "I'm currently developing new metrics for valuing NHL players at thepuckluck.com along with creating an  " +
-                "nba app for displaying more in depth statistics. Oh... I also really love board games (anyone up for Catan?!?)."}
+                "I'm currently developing new metrics based on shot quality models for valuing NHL players at "}
+                <StyledA href='https:www.thepuckluck.com'>thepuckluck.com</StyledA>
+                {", along with some other side projects." +
+                " Oh yeah... I also really love board games (anyone up for Catan?!?)."}
                 {/*<br />*/}
                 {/*<br />*/}
                 {/*<Link to="/portfolio">*/}
