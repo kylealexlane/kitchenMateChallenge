@@ -18,7 +18,7 @@ const colors = {
   mainText: "#fafafa",
   secondaryText: "#5f6368",
 
-  mainAccent: "#1D9696",
+  mainAccent: "#FF6B00",
   secondaryAccent: "#B4EC51",
 };
 

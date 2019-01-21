@@ -45,7 +45,7 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledA = styled.a`
-  color: #1D9696;
+  color: ${props => props.theme.colors.mainAccent};
 `;
 
 const StyledParticles = styled(Particles)`
