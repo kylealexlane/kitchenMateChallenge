@@ -12,7 +12,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    background: #202124;
+    background: #fff;
   }
 
   h1 {
@@ -22,13 +22,11 @@ injectGlobal`
   h2 {
     font-size: 44px;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 3px;
   }
   h3 {
     font-size: 24px;
     font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 2px;
   }
   h4 {
