@@ -26,6 +26,7 @@ class Board extends React.Component {
       message: "Click any box to start!!",
       oTurn: true,
       winner: -1,
+      turnNum: 1,
     };
     this.restart = this.restart.bind(this);
     this.winnerMessage = this.winnerMessage.bind(this);
@@ -38,8 +39,11 @@ class Board extends React.Component {
     } else {
       let newValues = this.state.values;
       this.state.oTurn ? newValues[index] = 2 : newValues[index] = 1;
-      this.setState({ values: newValues});
-      this.setState({ oTurn: !this.state.oTurn });
+      this.setState({
+        values: newValues,
+        turnNum: this.state.turnNum+1,
+        oTurn: !this.state.oTurn,
+      });
       return(true);
     }
   }
@@ -59,8 +63,10 @@ class Board extends React.Component {
     for(let i = 0; i<wins.length; i++){
       const winCombo = wins[i];
       if((v[winCombo[0]] !== -1) && (v[winCombo[0]] === v[winCombo[1]] && v[winCombo[0]] === v[winCombo[2]])) {
-        this.setState({ message: "There is a winner!!!!"});
-        this.setState({ winner: v[winCombo[0]] });
+        this.setState({
+          message: "There is a winner!!!!",
+          winner: v[winCombo[0]]
+        });
       }
     }
   }
@@ -87,6 +93,7 @@ class Board extends React.Component {
       values: new Array(9).fill(-1),
       winner: -1,
       oTurn: true,
+      turnNum: 1
     })
   }
 
@@ -96,7 +103,8 @@ class Board extends React.Component {
       <React.Fragment>
         <h1>{this.state.message}</h1>
         <h2>{this.winnerMessage()}</h2>
-        <h2>Turn: {this.state.oTurn ? "o" : "x"}</h2>
+        <h2>To Play: {this.state.oTurn ? "o" : "x"}</h2>
+        <h2>Turn Number: {this.state.turnNum}</h2>
         <Row>
           <Square val={v[0]} index={0} handleClick={(i, v) => this.handleClick(i, v)}/>
           <Square val={v[1]} index={1} handleClick={(i, v) => this.handleClick(i, v)}/>
