@@ -24,7 +24,7 @@ class Board extends React.Component {
     this.state = {
       values: new Array(9).fill(-1),
       message: "Click any box to start!!",
-      xTurn: true,
+      oTurn: true,
       winner: -1,
     };
     this.restart = this.restart.bind(this);
@@ -37,9 +37,9 @@ class Board extends React.Component {
       return(false);
     } else {
       let newValues = this.state.values;
-      this.state.xTurn ? newValues[index] = 2 : newValues[index] = 1;
+      this.state.oTurn ? newValues[index] = 2 : newValues[index] = 1;
       this.setState({ values: newValues});
-      this.setState({ xTurn: !this.state.xTurn });
+      this.setState({ oTurn: !this.state.oTurn });
       return(true);
     }
   }
@@ -86,7 +86,7 @@ class Board extends React.Component {
       message: "Game has been restarted",
       values: new Array(9).fill(-1),
       winner: -1,
-      xTurn: true,
+      oTurn: true,
     })
   }
 
@@ -96,6 +96,7 @@ class Board extends React.Component {
       <React.Fragment>
         <h1>{this.state.message}</h1>
         <h2>{this.winnerMessage()}</h2>
+        <h2>Turn: {this.state.oTurn ? "o" : "x"}</h2>
         <Row>
           <Square val={v[0]} index={0} handleClick={(i, v) => this.handleClick(i, v)}/>
           <Square val={v[1]} index={1} handleClick={(i, v) => this.handleClick(i, v)}/>
