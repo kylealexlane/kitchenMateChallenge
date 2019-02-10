@@ -4,8 +4,7 @@ import { ConnectedRouter } from "connected-react-router";
 import styled, { withTheme } from "styled-components";
 import { history } from "../store";
 
-import { HomeContainer, AboutContainer } from "../containers";
-import { PortfolioSection } from "../components/PortfolioSection";
+import { HomeContainer } from "../containers";
 
 const Container = styled.div`
   text-align: left;
@@ -18,8 +17,6 @@ function Routes() {
         <Container>
           {/*<Route exact path={process.env.PUBLIC_URL + "/"} component={HomeContainer} />*/}
           <Route exact path={"/"} component={HomeContainer} />
-          <Route exact path={"/about"} component={AboutContainer} />
-          <Route exact path={"/portfolio"} component={PortfolioSection} />
         </Container>
       </React.Fragment>
     </ConnectedRouter>

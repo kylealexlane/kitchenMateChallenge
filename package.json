@@ -12,7 +12,6 @@
     "connected-react-router": "^4.3.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "particles.js": "^2.0.0",
     "prop-types": "^15.6.1",
     "react": "16.2.0",
     "react-animations": "^1.0.0",
