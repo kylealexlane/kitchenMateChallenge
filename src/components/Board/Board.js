@@ -24,9 +24,14 @@ class Board extends React.Component {
     this.state = {
       values: new Array(9).fill(-1),
       message: "Click any box to start!!",
+<<<<<<< HEAD
       oTurn: true,
       winner: -1,
       turnNum: 1,
+=======
+      xTurn: true,
+      winner: -1,
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
     };
     this.restart = this.restart.bind(this);
     this.winnerMessage = this.winnerMessage.bind(this);
@@ -38,12 +43,18 @@ class Board extends React.Component {
       return(false);
     } else {
       let newValues = this.state.values;
+<<<<<<< HEAD
       this.state.oTurn ? newValues[index] = 2 : newValues[index] = 1;
       this.setState({
         values: newValues,
         turnNum: this.state.turnNum+1,
         oTurn: !this.state.oTurn,
       });
+=======
+      this.state.xTurn ? newValues[index] = 2 : newValues[index] = 1;
+      this.setState({ values: newValues});
+      this.setState({ xTurn: !this.state.xTurn });
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
       return(true);
     }
   }
@@ -63,10 +74,15 @@ class Board extends React.Component {
     for(let i = 0; i<wins.length; i++){
       const winCombo = wins[i];
       if((v[winCombo[0]] !== -1) && (v[winCombo[0]] === v[winCombo[1]] && v[winCombo[0]] === v[winCombo[2]])) {
+<<<<<<< HEAD
         this.setState({
           message: "There is a winner!!!!",
           winner: v[winCombo[0]]
         });
+=======
+        this.setState({ message: "There is a winner!!!!"});
+        this.setState({ winner: v[winCombo[0]] });
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
       }
     }
   }
@@ -92,8 +108,12 @@ class Board extends React.Component {
       message: "Game has been restarted",
       values: new Array(9).fill(-1),
       winner: -1,
+<<<<<<< HEAD
       oTurn: true,
       turnNum: 1
+=======
+      xTurn: true,
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
     })
   }
 
@@ -103,8 +123,11 @@ class Board extends React.Component {
       <React.Fragment>
         <h1>{this.state.message}</h1>
         <h2>{this.winnerMessage()}</h2>
+<<<<<<< HEAD
         <h2>To Play: {this.state.oTurn ? "o" : "x"}</h2>
         <h2>Turn Number: {this.state.turnNum}</h2>
+=======
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
         <Row>
           <Square val={v[0]} index={0} handleClick={(i, v) => this.handleClick(i, v)}/>
           <Square val={v[1]} index={1} handleClick={(i, v) => this.handleClick(i, v)}/>
