@@ -29,6 +29,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       oTurn: true,
       winner: -1,
       turnNum: 1,
@@ -54,6 +55,9 @@ class Board extends React.Component {
 >>>>>>> c612210... Added turn number
 =======
       xTurn: true,
+=======
+      oTurn: true,
+>>>>>>> cf218b0... Added turn tracking.
       winner: -1,
 >>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
     };
@@ -72,6 +76,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.state.oTurn ? newValues[index] = 2 : newValues[index] = 1;
       this.setState({
         values: newValues,
@@ -114,6 +119,11 @@ class Board extends React.Component {
       this.setState({ values: newValues});
       this.setState({ xTurn: !this.state.xTurn });
 >>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
+=======
+      this.state.oTurn ? newValues[index] = 2 : newValues[index] = 1;
+      this.setState({ values: newValues});
+      this.setState({ oTurn: !this.state.oTurn });
+>>>>>>> cf218b0... Added turn tracking.
       return(true);
     }
   }
@@ -194,6 +204,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       oTurn: true,
       turnNum: 1
 <<<<<<< HEAD
@@ -218,6 +229,9 @@ class Board extends React.Component {
 =======
       xTurn: true,
 >>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
+=======
+      oTurn: true,
+>>>>>>> cf218b0... Added turn tracking.
     })
   }
 
@@ -234,6 +248,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <h2>To Play: {this.state.oTurn ? "o" : "x"}</h2>
         <h2>Turn Number: {this.state.turnNum}</h2>
 =======
@@ -256,6 +271,9 @@ class Board extends React.Component {
 >>>>>>> c612210... Added turn number
 =======
 >>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
+=======
+        <h2>Turn: {this.state.oTurn ? "o" : "x"}</h2>
+>>>>>>> cf218b0... Added turn tracking.
         <Row>
           <Square val={v[0]} index={0} handleClick={(i, v) => this.handleClick(i, v)}/>
           <Square val={v[1]} index={1} handleClick={(i, v) => this.handleClick(i, v)}/>
