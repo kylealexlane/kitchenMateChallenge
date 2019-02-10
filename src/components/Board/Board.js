@@ -28,6 +28,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       oTurn: true,
       winner: -1,
       turnNum: 1,
@@ -51,6 +52,10 @@ class Board extends React.Component {
 >>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
 =======
 >>>>>>> c612210... Added turn number
+=======
+      xTurn: true,
+      winner: -1,
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
     };
     this.restart = this.restart.bind(this);
     this.winnerMessage = this.winnerMessage.bind(this);
@@ -66,6 +71,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.state.oTurn ? newValues[index] = 2 : newValues[index] = 1;
       this.setState({
         values: newValues,
@@ -103,6 +109,11 @@ class Board extends React.Component {
 >>>>>>> cf218b0... Added turn tracking.
 =======
 >>>>>>> c612210... Added turn number
+=======
+      this.state.xTurn ? newValues[index] = 2 : newValues[index] = 1;
+      this.setState({ values: newValues});
+      this.setState({ xTurn: !this.state.xTurn });
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
       return(true);
     }
   }
@@ -122,6 +133,7 @@ class Board extends React.Component {
     for(let i = 0; i<wins.length; i++){
       const winCombo = wins[i];
       if((v[winCombo[0]] !== -1) && (v[winCombo[0]] === v[winCombo[1]] && v[winCombo[0]] === v[winCombo[2]])) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,6 +160,10 @@ class Board extends React.Component {
 >>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
 =======
 >>>>>>> c612210... Added turn number
+=======
+        this.setState({ message: "There is a winner!!!!"});
+        this.setState({ winner: v[winCombo[0]] });
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
       }
     }
   }
@@ -177,6 +193,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       oTurn: true,
       turnNum: 1
 <<<<<<< HEAD
@@ -198,6 +215,9 @@ class Board extends React.Component {
 >>>>>>> cf218b0... Added turn tracking.
 =======
 >>>>>>> c612210... Added turn number
+=======
+      xTurn: true,
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
     })
   }
 
@@ -213,6 +233,7 @@ class Board extends React.Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <h2>To Play: {this.state.oTurn ? "o" : "x"}</h2>
         <h2>Turn Number: {this.state.turnNum}</h2>
 =======
@@ -233,6 +254,8 @@ class Board extends React.Component {
         <h2>To Play: {this.state.oTurn ? "o" : "x"}</h2>
         <h2>Turn Number: {this.state.turnNum}</h2>
 >>>>>>> c612210... Added turn number
+=======
+>>>>>>> e5794e7... Basics done and functionality complete. Square and board finished.
         <Row>
           <Square val={v[0]} index={0} handleClick={(i, v) => this.handleClick(i, v)}/>
           <Square val={v[1]} index={1} handleClick={(i, v) => this.handleClick(i, v)}/>
